@@ -1,20 +1,20 @@
 # 📒 笔记
 
-## 小音和猫猫的知识库
+## 志诚AI笔记
 
-欢迎来到小音和猫猫的知识库 [Nólëbase](https://nolebase.ayaka.io)，这里是 📒 笔记分区
+志诚AI笔记 [PansiNote](https://Pansinote.netlify.app)，这里是 📒 笔记分区
 
 ## 想要自己部署和在本地启动强大的 Nólëbase 知识库，或者自己拥有一份？
 
-很高兴你对 [Nólëbase](https://nolebase.ayaka.io) 感兴趣！
+很高兴你对 [PansiNote](https://Pansinote.netlify.app) 感兴趣！
 
 ### 背景介绍
 
-首先 [Nólëbase](https://nolebase.ayaka.io) 是完全可以在本地无网络环境的情况下使用的！你可以在跟随[如何下载到本地](#如何下载到本地)的指引下载或者克隆之后使用 [Obsidian](https://obsidian.md) 和 [Logseq](https://logseq.com/) 这样的知识库软件打开，也可以用 [Typora](https://typora.io/) 这样的 Markdown 编辑器打开进行浏览和编辑，这意味着即便你不具备任何的编程技能，也可以使用或者借鉴我们的知识库分类和组织方法。
+首先 [PansiNote](https://Pansinote.netlify.app) 是完全可以在本地无网络环境的情况下使用的！你可以在跟随[如何下载到本地](#如何下载到本地)的指引下载或者克隆之后使用 [Obsidian](https://obsidian.md) 和 [Logseq](https://logseq.com/) 这样的知识库软件打开，也可以用 [Typora](https://typora.io/) 这样的 Markdown 编辑器打开进行浏览和编辑，这意味着即便你不具备任何的编程技能，也可以使用或者借鉴我们的知识库分类和组织方法。
 
 在继续之前，也请容许我介绍一下对项目所使用的技术和架构。
 
-和其他的由 [Hexo](https://hexo.io) 驱动和生成的博客和静态网站类似，[Nólëbase](https://nolebase.ayaka.io) 其实使用了名为 [VitePress](https://vitepress.dev) 的静态生成器来驱动和生成网站，像 [VitePress](https://vitepress.dev) 这样的静态生成器支持在 Markdown 文件中使用 [Vue](https://vuejs.org/) 组件来嵌入并增强文档的阅读和使用体验。而 [VitePress](https://vitepress.dev) 和 [Vue](https://vuejs.org/) 是 [Node.js](https://nodejs.org/en) 生态的一部分，他们都属于「前端技术」的一部分。
+和其他的由 [Hexo](https://hexo.io) 驱动和生成的博客和静态网站类似，[PansiNote](https://Pansinote.netlify.app)其实使用了名为 [VitePress](https://vitepress.dev) 的静态生成器来驱动和生成网站，像 [VitePress](https://vitepress.dev) 这样的静态生成器支持在 Markdown 文件中使用 [Vue](https://vuejs.org/) 组件来嵌入并增强文档的阅读和使用体验。而 [VitePress](https://vitepress.dev) 和 [Vue](https://vuejs.org/) 是 [Node.js](https://nodejs.org/en) 生态的一部分，他们都属于「前端技术」的一部分。
 
 在运行和部署上，我们使用免费的 [Netlify](https://www.netlify.com/) 来提供网站的托管，使用 [GitHub Actions](https://github.com/features/actions)（你可以理解一个将会在每次我们将笔记和知识库内容更新到 GitHub 仓库之后会自动触发的一个自动化工作）把我们的笔记和知识库内容自动构建和部署到 [Netlify](https://www.netlify.com/) 上。
 
