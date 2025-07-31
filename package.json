@@ -25,6 +25,8 @@
     "docs:build": "pnpm run update && vitepress build",
     "docs:serve": "vitepress serve",
     "update": "tsx scripts/update.ts",
+    "sync-index": "node scripts/sync-index.js",
+    "sync-index:watch": "node scripts/sync-index.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -53,6 +55,7 @@
     "@unocss/reset": "^0.58.9",
     "@vueuse/core": "^10.9.0",
     "@vueuse/shared": "^10.9.0",
+    "chokidar": "^4.0.3",
     "emoji-regex": "^10.3.0",
     "eslint": "^8.57.0",
     "fast-glob": "^3.3.2",
