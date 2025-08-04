@@ -1,0 +1,33 @@
+{
+  "chatglm": {
+    "apiKey": "",
+    "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+    "model": "glm-4-plus",
+    "maxTokens": 1000,
+    "temperature": 0.7,
+    "timeout": 30000,
+    "retryAttempts": 3
+  },
+  "monitoring": {
+    "watchPaths": ["笔记"],
+    "ignorePatterns": [
+      "**/.obsidian/**",
+      "**/node_modules/**",
+      "**/.git/**",
+      "**/index.md"
+    ],
+    "debounceMs": 2000
+  },
+  "content": {
+    "maxSummaries": 10,
+    "summaryLength": 100,
+    "indexFilePath": "笔记/index.md"
+  },
+  "logging": {
+    "level": "info",
+    "file": "logs/auto-summary.log",
+    "maxSize": "10m",
+    "maxFiles": 5,
+    "datePattern": "YYYY-MM-DD"
+  }
+}

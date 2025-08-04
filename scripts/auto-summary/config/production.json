@@ -1,0 +1,15 @@
+{
+  "chatglm": {
+    "timeout": 60000,
+    "retryAttempts": 5
+  },
+  "logging": {
+    "level": "warn",
+    "file": "logs/auto-summary-prod.log",
+    "maxSize": "50m",
+    "maxFiles": 10
+  },
+  "monitoring": {
+    "debounceMs": 5000
+  }
+}
