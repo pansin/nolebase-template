@@ -1,1062 +1,30 @@
 [
   {
     "id": "56yU6K6wLe9kee7n",
-    "title": "运维行为监控与审计",
-    "description": "通过将堡垒机日志接入SIEM/SOC系统，实现运维行为实时监控与审计。包括日志采集标准化、SIEM集成、异常检测及自动化响应，提升安全管控。",
-    "excerpt": "根据文档内容，将堡垒机（如JumpServer）的操作日志接入SIEM/SOC系统实现实时监控与审计，需通过以下步骤实现安全管控目标： --- - 登录审计：采集用户登录堡垒机的IP、时间、认证方式（如MFA状态）、登录结果（成功/失败）。 - 资源访问：记录访问的目标主机/IP、协议（SSH/RDP）、会话起止时间。 -...",
-    "tags": [
-      "Python",
-      "机器学习",
-      "代码",
-      "总结",
-      "运维监控",
-      "安全审计",
-      "SIEM",
-      "堡垒机"
-    ],
-    "category": "信息安全",
-    "keyPoints": [
-      "日志标准化与采集",
-      "SIEM/SOC集成",
-      "异常行为检测"
-    ],
-    "filePath": "笔记/网络安全/运维行为监控与审计.md",
-    "relativePath": "笔记/网络安全/运维行为监控与审计.md",
-    "fileName": "运维行为监控与审计.md",
-    "fileSize": 4938,
-    "wordCount": 1080,
-    "readingTime": 5,
-    "language": "zh-CN",
-    "thumbnail": null,
-    "hasImages": false,
-    "hasCode": true,
-    "hasLinks": false,
-    "hasTables": true,
-    "hasMath": false,
-    "headings": [
-      {
-        "level": 3,
-        "text": "**一、日志采集与标准化**",
-        "anchor": "一日志采集与标准化"
-      },
-      {
-        "level": 4,
-        "text": "1. **数据源覆盖**",
-        "anchor": "1-数据源覆盖"
-      },
-      {
-        "level": 4,
-        "text": "2. **日志格式标准化**",
-        "anchor": "2-日志格式标准化"
-      },
-      {
-        "level": 3,
-        "text": "**二、SIEM/SOC集成方案**",
-        "anchor": "二siemsoc集成方案"
-      },
-      {
-        "level": 4,
-        "text": "1. **传输协议与接口**",
-        "anchor": "1-传输协议与接口"
-      },
-      {
-        "level": 4,
-        "text": "2. **解析与富化**",
-        "anchor": "2-解析与富化"
-      },
-      {
-        "level": 3,
-        "text": "**三、实时监控策略设计**",
-        "anchor": "三实时监控策略设计"
-      },
-      {
-        "level": 4,
-        "text": "1. **异常行为检测模型**",
-        "anchor": "1-异常行为检测模型"
-      },
-      {
-        "level": 4,
-        "text": "2. **机器学习辅助分析**",
-        "anchor": "2-机器学习辅助分析"
-      },
-      {
-        "level": 3,
-        "text": "**四、审计与响应闭环**",
-        "anchor": "四审计与响应闭环"
-      },
-      {
-        "level": 4,
-        "text": "1. **审计能力增强**",
-        "anchor": "1-审计能力增强"
-      },
-      {
-        "level": 4,
-        "text": "2. **自动化响应**",
-        "anchor": "2-自动化响应"
-      },
-      {
-        "level": 3,
-        "text": "**五、最佳实践建议**",
-        "anchor": "五最佳实践建议"
-      },
-      {
-        "level": 3,
-        "text": "**总结**",
-        "anchor": "总结"
-      }
-    ],
-    "links": [],
-    "images": [],
-    "codeBlocks": [
-      {
-        "language": "text",
-        "code": "{  \"timestamp\": \"2023-07-31T14:22:18Z\",  \"user\": \"admin@jumpserver\",  \"source_ip\": \"192.168.1.100\",  \"target_host\": \"db-server-01\",  \"action\": \"command_exec\",  \"command\": \"sudo service mysql restart\",  \"risk_level\": \"high\" // 根据预定义规则标记风险等级}",
-        "lineCount": 2
-      },
-      {
-        "language": "text",
-        "code": "if risk_level == \"critical\":    disable_user_account(user)          # 禁用账号    terminate_session(session_id)       # 终止会话    create_ticket(incident_details)    # 生成工单",
-        "lineCount": 2
-      }
-    ],
-    "createdAt": "2025-07-31T10:45:20.538Z",
-    "updatedAt": "2025-07-31T10:45:41.301Z",
-    "lastModified": 1753958741301,
-    "confidence": 0.8,
-    "generatedAt": "2025-08-04T11:03:03.702Z",
-    "author": null
-  },
-  {
-    "id": "56yU6K6wLe9kee7n",
-    "title": "金融行业红队测试",
-    "description": "TIBER-EU和CBEST是金融业红队测试标杆框架，分别强调跨机构安全提升和监管合规。TIBER-EU适用于欧盟，CBEST针对英国机构，均依赖威胁情报和第三方参与。",
-    "excerpt": "根据文档内容，以下是关于TIBER-EU和CBEST框架的详细解读： --- - 威胁情报驱动：基于真实威胁情报模拟针对金融基础设施的针对性攻击。 - 提升网络弹性：通过实战测试金融机构的检测、响应和恢复能力。 - 跨机构一致性：为欧盟金融业提供标准化测试框架，确保结果可比性。 | | | |---|---| |团队|角色|...",
+    "title": "语音可控设备（VCDs）攻防",
+    "description": "AI三大能力驱动产业变革，企业需重视数据战略与伦理挑战，未来趋向人机共生。",
+    "excerpt": "根据提供的文章内容，其核心内容可归纳为以下要点： --- 1. AI三大核心能力 - 理解（Understanding）：自然语言处理使机器能理解人类意图（如客服自动化）。 - 推理（Reasoning）：逻辑分析解决复杂问题（如AlphaGo下棋、金融风险评估）。 - 学习（Learning）：通过数据自主优化模型（如深度学习在图像识别的应用）。 2. AI发展里程碑 -...",
     "tags": [
       "AI",
-      "机器学习",
-      "总结",
-      "金融安全",
-      "红队测试",
-      "TIBER-EU",
-      "CBEST",
-      "威胁情报"
-    ],
-    "category": "金融网络安全",
-    "keyPoints": [
-      "TIBER-EU强调跨机构协作",
-      "CBEST聚焦监管合规",
-      "威胁情报驱动测试"
-    ],
-    "filePath": "笔记/网络安全/金融行业红队测试.md",
-    "relativePath": "笔记/网络安全/金融行业红队测试.md",
-    "fileName": "金融行业红队测试.md",
-    "fileSize": 14253,
-    "wordCount": 3639,
-    "readingTime": 15,
-    "language": "zh-CN",
-    "thumbnail": null,
-    "hasImages": false,
-    "hasCode": false,
-    "hasLinks": false,
-    "hasTables": true,
-    "hasMath": false,
-    "headings": [
-      {
-        "level": 3,
-        "text": "**1. TIBER-EU（Threat Intelligence-Based Ethical Red Teaming）**",
-        "anchor": "1-tiber-euthreat-intelligence-based-ethical-red-teaming"
-      },
-      {
-        "level": 4,
-        "text": "**核心目标**",
-        "anchor": "核心目标"
-      },
-      {
-        "level": 4,
-        "text": "**关键参与者**",
-        "anchor": "关键参与者"
-      },
-      {
-        "level": 4,
-        "text": "**流程特点**",
-        "anchor": "流程特点"
-      },
-      {
-        "level": 3,
-        "text": "**2. CBEST（英国央行网络安全评估框架）**",
-        "anchor": "2-cbest英国央行网络安全评估框架"
-      },
-      {
-        "level": 4,
-        "text": "**核心目标**",
-        "anchor": "核心目标"
-      },
-      {
-        "level": 4,
-        "text": "**关键参与者**",
-        "anchor": "关键参与者"
-      },
-      {
-        "level": 4,
-        "text": "**流程特点**",
-        "anchor": "流程特点"
-      },
-      {
-        "level": 3,
-        "text": "**关键对比**",
-        "anchor": "关键对比"
-      },
-      {
-        "level": 3,
-        "text": "**实际应用场景**",
-        "anchor": "实际应用场景"
-      },
-      {
-        "level": 3,
-        "text": "**总结**",
-        "anchor": "总结"
-      },
-      {
-        "level": 3,
-        "text": "**1. TIBER-EU框架最新进展**",
-        "anchor": "1-tiber-eu框架最新进展"
-      },
-      {
-        "level": 4,
-        "text": "**(1) 标准化与推广**",
-        "anchor": "1-标准化与推广"
-      },
-      {
-        "level": 4,
-        "text": "**(2) 技术深化**",
-        "anchor": "2-技术深化"
-      },
-      {
-        "level": 4,
-        "text": "**(3) 新兴挑战应对**",
-        "anchor": "3-新兴挑战应对"
-      },
-      {
-        "level": 3,
-        "text": "**2. CBEST框架最新进展**",
-        "anchor": "2-cbest框架最新进展"
-      },
-      {
-        "level": 4,
-        "text": "**(1) 监管融合**",
-        "anchor": "1-监管融合"
-      },
-      {
-        "level": 4,
-        "text": "**(2) 技术演进**",
-        "anchor": "2-技术演进"
-      },
-      {
-        "level": 4,
-        "text": "**(3) 攻击技术更新**",
-        "anchor": "3-攻击技术更新"
-      },
-      {
-        "level": 3,
-        "text": "**3. 研究热点与未来方向**",
-        "anchor": "3-研究热点与未来方向"
-      },
-      {
-        "level": 3,
-        "text": "**4. 典型研究案例**",
-        "anchor": "4-典型研究案例"
-      },
-      {
-        "level": 3,
-        "text": "**参考资料**",
-        "anchor": "参考资料"
-      },
-      {
-        "level": 3,
-        "text": "**1. 情报驱动（Threat Intelligence-Led）**",
-        "anchor": "1-情报驱动threat-intelligence-led"
-      },
-      {
-        "level": 3,
-        "text": "**2. 全生命周期闭环验证**",
-        "anchor": "2-全生命周期闭环验证"
-      },
-      {
-        "level": 3,
-        "text": "**3. 监管合规与标准化**",
-        "anchor": "3-监管合规与标准化"
-      },
-      {
-        "level": 3,
-        "text": "**关键区别**",
-        "anchor": "关键区别"
-      },
-      {
-        "level": 3,
-        "text": "**示例说明**",
-        "anchor": "示例说明"
-      },
-      {
-        "level": 3,
-        "text": "**TIBER-EU框架（欧盟）**",
-        "anchor": "tiber-eu框架欧盟"
-      },
-      {
-        "level": 3,
-        "text": "**CBEST框架（英国）**",
-        "anchor": "cbest框架英国"
-      },
-      {
-        "level": 3,
-        "text": "**关键差异对比**",
-        "anchor": "关键差异对比"
-      }
-    ],
-    "links": [],
-    "images": [],
-    "codeBlocks": [],
-    "createdAt": "2025-07-23T08:19:37.785Z",
-    "updatedAt": "2025-07-23T08:19:42.414Z",
-    "lastModified": 1753258782414,
-    "confidence": 0.8,
-    "generatedAt": "2025-08-04T11:03:03.650Z",
-    "author": null
-  },
-  {
-    "id": "56yU6K6wLe9kee7n",
-    "title": "道德黑客",
-    "description": "道德黑客遵循合法、保密、提升安全的原则，使用侦察、扫描、攻击、权限维持等技术工具（如Nmap、Metasploit）进行授权测试，需注意法律风险。",
-    "excerpt": "根据提供的PDF文章《Hacking Tricks, Methods, and Offensive Strategies》的核心内容，以下是关键要点的总结： --- - 合法性与授权：只能在获得明确书面许可的系统上进行测试（如自建实验室或授权目标）。 - 保密性：不得泄露测试中获取的敏感信息。 - 目的导向：目标是发现漏洞以提升安全防御，而非破坏系统。 - 工具使用：书中工具（如Kali...",
-    "tags": [
-      "总结",
-      "道德黑客",
-      "渗透测试",
-      "安全工具",
-      "法律风险"
-    ],
-    "category": "网络安全",
-    "keyPoints": [
-      "合法授权测试",
-      "关键技术工具",
-      "职业发展建议"
-    ],
-    "filePath": "笔记/网络安全/道德黑客.md",
-    "relativePath": "笔记/网络安全/道德黑客.md",
-    "fileName": "道德黑客.md",
-    "fileSize": 3517,
-    "wordCount": 744,
-    "readingTime": 3,
-    "language": "zh-CN",
-    "thumbnail": null,
-    "hasImages": false,
-    "hasCode": false,
-    "hasLinks": false,
-    "hasTables": true,
-    "hasMath": false,
-    "headings": [
-      {
-        "level": 3,
-        "text": "**1. 道德黑客的核心原则**",
-        "anchor": "1-道德黑客的核心原则"
-      },
-      {
-        "level": 3,
-        "text": "**2. 关键技术与工具**",
-        "anchor": "2-关键技术与工具"
-      },
-      {
-        "level": 4,
-        "text": "**侦察阶段（Reconnaissance）**",
-        "anchor": "侦察阶段reconnaissance"
-      },
-      {
-        "level": 4,
-        "text": "**深度扫描（Scanning & Enumeration）**",
-        "anchor": "深度扫描scanning-enumeration"
-      },
-      {
-        "level": 4,
-        "text": "**攻击阶段（Exploitation）**",
-        "anchor": "攻击阶段exploitation"
-      },
-      {
-        "level": 4,
-        "text": "**权限维持（Persistence）**",
-        "anchor": "权限维持persistence"
-      },
-      {
-        "level": 3,
-        "text": "**3. 实践与职业发展**",
-        "anchor": "3-实践与职业发展"
-      },
-      {
-        "level": 3,
-        "text": "**4. 重要警告**",
-        "anchor": "4-重要警告"
-      }
-    ],
-    "links": [],
-    "images": [],
-    "codeBlocks": [],
-    "createdAt": "2025-07-23T07:19:11.488Z",
-    "updatedAt": "2025-07-23T07:19:14.629Z",
-    "lastModified": 1753255154629,
-    "confidence": 0.8,
-    "generatedAt": "2025-08-04T11:03:03.068Z",
-    "author": null
-  },
-  {
-    "id": "56yU6K6wLe9kee7n",
-    "title": "网络安全防御",
-    "description": "《Cyber Defense: Best Practices for Digital Safety》强调网络安全防御重要性，涵盖个人、家庭及企业策略，应对复杂威胁。核心防御包括强密码、MFA、软件更新、数据加密及行为安全。强调持续防护与用户教育。",
-    "excerpt": "根据提供的文章内容，以下是《Cyber Defense: Best Practices for Digital Safety》的核心内容提炼： --- 网络安全防御与数字安全最佳实践，涵盖个人、家庭及企业层面的安全策略，旨在应对日益复杂的网络威胁。 --- 1. 网络安全的重要性 - 数字化风险：互联设备普及（IoT、移动设备）扩大了攻击面，威胁从金融欺诈到关键基础设施破坏。 -...",
-    "tags": [
-      "AI",
-      "总结",
-      "网络安全",
-      "数字安全",
-      "防御策略",
-      "应急响应",
-      "用户教育"
-    ],
-    "category": "网络安全",
-    "keyPoints": [
-      "强密码与MFA",
-      "软件更新与数据加密",
-      "行为安全与应急响应"
-    ],
-    "filePath": "笔记/网络安全/网络安全防御.md",
-    "relativePath": "笔记/网络安全/网络安全防御.md",
-    "fileName": "网络安全防御.md",
-    "fileSize": 7058,
-    "wordCount": 1766,
-    "readingTime": 8,
-    "language": "zh-CN",
-    "thumbnail": null,
-    "hasImages": false,
-    "hasCode": false,
-    "hasLinks": false,
-    "hasTables": true,
-    "hasMath": false,
-    "headings": [
-      {
-        "level": 3,
-        "text": "**核心主题**",
-        "anchor": "核心主题"
-      },
-      {
-        "level": 3,
-        "text": "**关键内容框架**",
-        "anchor": "关键内容框架"
-      },
-      {
-        "level": 3,
-        "text": "**核心主张**",
-        "anchor": "核心主张"
-      },
-      {
-        "level": 3,
-        "text": "**总结**",
-        "anchor": "总结"
-      },
-      {
-        "level": 3,
-        "text": "**一、个人数字安全防御**",
-        "anchor": "一个人数字安全防御"
-      },
-      {
-        "level": 3,
-        "text": "**二、金融安全实践**",
-        "anchor": "二金融安全实践"
-      },
-      {
-        "level": 3,
-        "text": "**三、儿童在线安全实践**",
-        "anchor": "三儿童在线安全实践"
-      },
-      {
-        "level": 3,
-        "text": "**四、关键工具与资源**",
-        "anchor": "四关键工具与资源"
-      },
-      {
-        "level": 3,
-        "text": "**五、紧急响应流程**",
-        "anchor": "五紧急响应流程"
-      }
-    ],
-    "links": [],
-    "images": [],
-    "codeBlocks": [],
-    "createdAt": "2025-07-23T07:18:30.363Z",
-    "updatedAt": "2025-07-23T07:18:33.664Z",
-    "lastModified": 1753255113664,
-    "confidence": 0.8,
-    "generatedAt": "2025-08-04T11:02:58.591Z",
-    "author": null
-  },
-  {
-    "id": "56yU6K6wLe9kee7n",
-    "title": "网络安全桌面演练",
-    "description": "网络安全桌面演练提升团队协作、明确职责、测试威胁响应，需高管支持、目标设定、场景开发、高效主持和评估。演练减少响应时间，非“打勾练习”。",
-    "excerpt": "根据提供的PDF《网络安全桌面演练：从规划到执行》（Cybersecurity Tabletop Exercises: From Planning to Execution），以下是核心内容提炼： --- 1. 为何进行桌面演练（第1章） - 核心价值：提升事件响应团队协作、明确角色职责、评估流程变更影响、降低数据泄露成本、增强安全意识、满足合规要求（如ISO 27001、NIST SP...",
-    "tags": [
-      "网络安全",
-      "桌面演练",
-      "事件响应",
-      "合规要求",
-      "团队协作"
-    ],
-    "category": "网络安全",
-    "keyPoints": [
-      "提升团队协作与明确职责",
-      "高效测试威胁响应能力",
-      "结构化复盘转化为安全改进"
-    ],
-    "filePath": "笔记/网络安全/网络安全桌面演练.md",
-    "relativePath": "笔记/网络安全/网络安全桌面演练.md",
-    "fileName": "网络安全桌面演练.md",
-    "fileSize": 4269,
-    "wordCount": 1076,
-    "readingTime": 5,
-    "language": "zh-CN",
-    "thumbnail": null,
-    "hasImages": false,
-    "hasCode": false,
-    "hasLinks": false,
-    "hasTables": false,
-    "hasMath": false,
-    "headings": [
-      {
-        "level": 3,
-        "text": "**第一部分：桌面演练流程（第1-5章）**",
-        "anchor": "第一部分桌面演练流程第1-5章"
-      },
-      {
-        "level": 3,
-        "text": "**第二部分：场景案例（第6-8章）**",
-        "anchor": "第二部分场景案例第6-8章"
-      },
-      {
-        "level": 3,
-        "text": "**附录与资源**",
-        "anchor": "附录与资源"
-      }
-    ],
-    "links": [],
-    "images": [],
-    "codeBlocks": [],
-    "createdAt": "2025-07-25T05:57:40.657Z",
-    "updatedAt": "2025-07-25T05:57:44.621Z",
-    "lastModified": 1753423064621,
-    "confidence": 0.8,
-    "generatedAt": "2025-08-04T11:02:57.278Z",
-    "author": null
-  },
-  {
-    "id": "56yU6K6wLe9kee7n",
-    "title": "网络安全数据工程",
-    "description": "《网络安全数据工程》教授使用免费开源工具构建安全日志管道，涵盖日志集中化、标准化、自动化与富化，涉及Logstash、Kafka、Elastic架构等，强调TLS加密和Git配置管理。",
-    "excerpt": "根据提供的文章内容，以下是《网络安全数据工程》的核心内容提炼： --- - 受众：网络安全工程师、日志管理员、预算有限的团队及攻防测试人员。 - 目标：教授如何用免费开源工具构建安全的日志管道，实现日志集中化、标准化、自动化与富化。 --- 1. 数据工程基础 - 任务：日志集中化、吞吐量/延迟管理、数据富化（如添加威胁标签）、标准化（ECS规范）。 - 架构： - 基础管道：设备 →...",
-    "tags": [
-      "JavaScript",
-      "AI",
-      "机器学习",
-      "代码",
-      "图文",
-      "总结",
-      "网络安全",
-      "日志管理"
-    ],
-    "category": "网络安全与数据工程",
-    "keyPoints": [
-      "日志管道构建",
-      "数据标准化与富化",
-      "TLS加密通信"
-    ],
-    "filePath": "笔记/网络安全/网络安全数据工程.md",
-    "relativePath": "笔记/网络安全/网络安全数据工程.md",
-    "fileName": "网络安全数据工程.md",
-    "fileSize": 29270,
-    "wordCount": 6713,
-    "readingTime": 27,
-    "language": "zh-CN",
-    "thumbnail": "https://ima-notebook-prod.image.myqcloud.com/2/bzhZBeYDcJ4mLlfpda0fYP/917800834d3947a3be795524bdcfced4?q-sign-algorithm=sha1&q-ak=AKID9IDtLZZKqGRO7hVFnMn0zjXTXovoTtAN&q-sign-time=1753944126%3B1753972926&q-key-time=1753944126%3B1753972926&q-header-list=&q-url-param-list=&q-signature=82ee06b3bc01029b6328a7977d972f4eb78da57c",
-    "hasImages": true,
-    "hasCode": true,
-    "hasLinks": true,
-    "hasTables": true,
-    "hasMath": false,
-    "headings": [
-      {
-        "level": 3,
-        "text": "**一、书籍定位与目标**",
-        "anchor": "一书籍定位与目标"
-      },
-      {
-        "level": 3,
-        "text": "**二、核心内容框架**",
-        "anchor": "二核心内容框架"
-      },
-      {
-        "level": 4,
-        "text": "**第一部分：安全数据工程基础**",
-        "anchor": "第一部分安全数据工程基础"
-      },
-      {
-        "level": 4,
-        "text": "**第二部分：日志提取与管理**",
-        "anchor": "第二部分日志提取与管理"
-      },
-      {
-        "level": 4,
-        "text": "**第三部分：数据转换与标准化**",
-        "anchor": "第三部分数据转换与标准化"
-      },
-      {
-        "level": 4,
-        "text": "**第四部分：数据集中化与自动化**",
-        "anchor": "第四部分数据集中化与自动化"
-      },
-      {
-        "level": 3,
-        "text": "**三、关键技术亮点**",
-        "anchor": "三关键技术亮点"
-      },
-      {
-        "level": 3,
-        "text": "**四、适用场景**",
-        "anchor": "四适用场景"
-      },
-      {
-        "level": 3,
-        "text": "**1. 网络安全日志数据**",
-        "anchor": "1-网络安全日志数据"
-      },
-      {
-        "level": 3,
-        "text": "**2. 标准化后的数据字段（ECS）**",
-        "anchor": "2-标准化后的数据字段ecs"
-      },
-      {
-        "level": 3,
-        "text": "**3. 威胁情报与上下文数据**",
-        "anchor": "3-威胁情报与上下文数据"
-      },
-      {
-        "level": 3,
-        "text": "**4. 流水线中的中间数据**",
-        "anchor": "4-流水线中的中间数据"
-      },
-      {
-        "level": 3,
-        "text": "**5. 自动化配置数据**",
-        "anchor": "5-自动化配置数据"
-      },
-      {
-        "level": 3,
-        "text": "**关键数据示例**",
-        "anchor": "关键数据示例"
-      },
-      {
-        "level": 3,
-        "text": "**总结**",
-        "anchor": "总结"
-      },
-      {
-        "level": 3,
-        "text": "1. **终端与网络数据**",
-        "anchor": "1-终端与网络数据"
-      },
-      {
-        "level": 3,
-        "text": "2. **Windows系统日志**",
-        "anchor": "2-windows系统日志"
-      },
-      {
-        "level": 3,
-        "text": "3. **Syslog数据**",
-        "anchor": "3-syslog数据"
-      },
-      {
-        "level": 3,
-        "text": "4. **数据转换管道**",
-        "anchor": "4-数据转换管道"
-      }
-    ],
-    "links": [],
-    "images": [
-      {
-        "alt": "",
-        "src": "https://ima-notebook-prod.image.myqcloud.com/2/bzhZBeYDcJ4mLlfpda0fYP/917800834d3947a3be795524bdcfced4?q-sign-algorithm=sha1&q-ak=AKID9IDtLZZKqGRO7hVFnMn0zjXTXovoTtAN&q-sign-time=1753944126%3B1753972926&q-key-time=1753944126%3B1753972926&q-header-list=&q-url-param-list=&q-signature=82ee06b3bc01029b6328a7977d972f4eb78da57c",
-        "isExternal": true
-      },
-      {
-        "alt": "",
-        "src": "https://ima-notebook-prod.image.myqcloud.com/2/bzhZBeYDcJ4mLlfpda0fYP/50de03d6ffb147c587dd30e5a3af9705?q-sign-algorithm=sha1&q-ak=AKID9IDtLZZKqGRO7hVFnMn0zjXTXovoTtAN&q-sign-time=1753944126%3B1753972926&q-key-time=1753944126%3B1753972926&q-header-list=&q-url-param-list=&q-signature=42b1ec5ceb75e299caa121540df993a50fdd8305",
-        "isExternal": true
-      },
-      {
-        "alt": "",
-        "src": "https://ima-notebook-prod.image.myqcloud.com/2/bzhZBeYDcJ4mLlfpda0fYP/1ec046c9245c445c9f26a77ba9505a02?q-sign-algorithm=sha1&q-ak=AKID9IDtLZZKqGRO7hVFnMn0zjXTXovoTtAN&q-sign-time=1753945302%3B1753974102&q-key-time=1753945302%3B1753974102&q-header-list=&q-url-param-list=&q-signature=dc1cdbc3fb4d139ec1142e5e772b81e354395041",
-        "isExternal": true
-      },
-      {
-        "alt": "",
-        "src": "https://ima-notebook-prod.image.myqcloud.com/2/bzhZBeYDcJ4mLlfpda0fYP/838897d4088d428781cbc57573959f60?q-sign-algorithm=sha1&q-ak=AKID9IDtLZZKqGRO7hVFnMn0zjXTXovoTtAN&q-sign-time=1753945824%3B1753974624&q-key-time=1753945824%3B1753974624&q-header-list=&q-url-param-list=&q-signature=030a0aa5a11a4661fda0cf40dd684bf2f4a630cd",
-        "isExternal": true
-      }
-    ],
-    "codeBlocks": [
-      {
-        "language": "text",
-        "code": "{  \"@timestamp\": \"2025-07-31T12:00:00Z\",  \"source\": { \"ip\": \"192.168.1.100\" },  \"event\": {     \"action\": \"process_started\",    \"outcome\": \"success\"  },  \"threat\": { \"indicator\": \"malicious_ip\" }}",
-        "lineCount": 2
-      },
-      {
-        "language": "text",
-        "code": ">     # Logstash 过滤器示例：匹配IP并添加威胁标签filter {  translate {    field => \"source.ip\"    destination => \"threat.indicator.type\"    dictionary => { \"192.168.1.100\" => \"malicious\" }    fallback => \"unknown\"  }}\n>",
-        "lineCount": 2
-      },
-      {
-        "language": "text",
-        "code": ">     input {  http { port => 8080 }  # 接收API推送  file { path => \"/threat_feeds/*.json\" } # 读取本地情报文件}\n>",
-        "lineCount": 2
-      },
-      {
-        "language": "text",
-        "code": ">     filter {  translate {     dictionary_path => \"/threat_intel/ips.yml\"     field => \"source.ip\"     destination => \"threat.indicator\"   }}\n>",
-        "lineCount": 2
-      },
-      {
-        "language": "text",
-        "code": ">     input {  http_poller {    urls => {       virustotal => \" https://www.virustotal.com/api/v3/ip_addresses/8.8.8.8 \"     }    request_timeout => 60    schedule => { cron => \"* */6 * * *\" }  # 每6小时更新  }}\n>",
-        "lineCount": 2
-      },
-      {
-        "language": "text",
-        "code": ">     - name: Update threat intel filters  copy:    src: \"templates/threat_filter.conf\"    dest: \"/etc/logstash/conf.d/\"\n>",
-        "lineCount": 2
-      }
-    ],
-    "createdAt": "2025-07-31T10:44:26.847Z",
-    "updatedAt": "2025-07-31T10:44:59.779Z",
-    "lastModified": 1753958699779,
-    "confidence": 0.8,
-    "generatedAt": "2025-08-04T11:02:56.890Z",
-    "author": null
-  },
-  {
-    "id": "56yU6K6wLe9kee7n",
-    "title": "网络安全指标规划与应用",
-    "description": "本书通过数据驱动的网络安全指标降低风险，强调指标可量化、可操作、与业务对齐，涵盖METRICS方法论、ATLAS框架及AI/ML应用，实现安全与业务价值融合。",
-    "excerpt": "根据提供的PDF书籍《Data-Driven Cybersecurity: Reducing risk with proven metrics》的内容，以下是其核心内容的系统总结： --- 数据驱动的网络安全：通过可量化、可操作的指标（metrics）降低风险，将网络安全从经验导向转向数据驱动决策。重点包括： - 有效指标的定义：可量化、可操作、与业务目标对齐 -...",
-    "tags": [
-      "Python",
-      "AI",
-      "机器学习",
-      "总结",
-      "数据驱动",
-      "网络安全",
-      "指标体系",
-      "AI/ML"
-    ],
-    "category": "网络安全",
-    "keyPoints": [
-      "数据量化风险",
-      "指标驱动行动",
-      "业务对齐"
-    ],
-    "filePath": "笔记/网络安全/网络安全指标规划与应用.md",
-    "relativePath": "笔记/网络安全/网络安全指标规划与应用.md",
-    "fileName": "网络安全指标规划与应用.md",
-    "fileSize": 14775,
-    "wordCount": 3880,
-    "readingTime": 16,
-    "language": "zh-CN",
-    "thumbnail": null,
-    "hasImages": false,
-    "hasCode": false,
-    "hasLinks": false,
-    "hasTables": true,
-    "hasMath": true,
-    "headings": [
-      {
-        "level": 3,
-        "text": "**一、全书核心主题**",
-        "anchor": "一全书核心主题"
-      },
-      {
-        "level": 3,
-        "text": "**二、核心内容框架**",
-        "anchor": "二核心内容框架"
-      },
-      {
-        "level": 4,
-        "text": "**第一部分：基础构建（PART 1）**",
-        "anchor": "第一部分基础构建part-1"
-      },
-      {
-        "level": 4,
-        "text": "**第二部分：关键指标（PART 2）**",
-        "anchor": "第二部分关键指标part-2"
-      },
-      {
-        "level": 4,
-        "text": "**第三部分：高级分析与AI（PART 3）**",
-        "anchor": "第三部分高级分析与aipart-3"
-      },
-      {
-        "level": 3,
-        "text": "**三、贯穿全书的核心理念**",
-        "anchor": "三贯穿全书的核心理念"
-      },
-      {
-        "level": 3,
-        "text": "**四、关键图表与工具**",
-        "anchor": "四关键图表与工具"
-      },
-      {
-        "level": 3,
-        "text": "**METRICS方法论的七个阶段**",
-        "anchor": "metrics方法论的七个阶段"
-      },
-      {
-        "level": 4,
-        "text": "**1. Measure（测量）**",
-        "anchor": "1-measure测量"
-      },
-      {
-        "level": 4,
-        "text": "**2. Evaluate（评估）**",
-        "anchor": "2-evaluate评估"
-      },
-      {
-        "level": 4,
-        "text": "**3. Threshold（阈值）**",
-        "anchor": "3-threshold阈值"
-      },
-      {
-        "level": 4,
-        "text": "**4. Report（报告）**",
-        "anchor": "4-report报告"
-      },
-      {
-        "level": 4,
-        "text": "**5. Improve（改进）**",
-        "anchor": "5-improve改进"
-      },
-      {
-        "level": 4,
-        "text": "**6. Communicate（沟通）**",
-        "anchor": "6-communicate沟通"
-      },
-      {
-        "level": 4,
-        "text": "**7. Sustain（持续）**",
-        "anchor": "7-sustain持续"
-      },
-      {
-        "level": 3,
-        "text": "**方法论的核心价值**",
-        "anchor": "方法论的核心价值"
-      },
-      {
-        "level": 3,
-        "text": "**常见陷阱与规避**",
-        "anchor": "常见陷阱与规避"
-      },
-      {
-        "level": 3,
-        "text": "**案例：PharmaSecure的METRICS应用**",
-        "anchor": "案例pharmasecure的metrics应用"
-      }
-    ],
-    "links": [],
-    "images": [],
-    "codeBlocks": [],
-    "createdAt": "2025-08-01T09:58:02.117Z",
-    "updatedAt": "2025-08-01T09:58:22.864Z",
-    "lastModified": 1754042302864,
-    "confidence": 0.8,
-    "generatedAt": "2025-08-04T11:02:52.344Z",
-    "author": null
-  },
-  {
-    "id": "56yU6K6wLe9kee7n",
-    "title": "智能持续安全（ICS）",
-    "description": "ICS通过AI集成DevSecOps和SecOps，实现全生命周期持续安全防护，提升威胁检测、自动化测试和合规监控能力。",
-    "excerpt": "基于提供的PDF文章《Intelligent Continuous Security: AI-Enabled Transformation for Seamless Protection》，以下是其核心内容的提炼： --- - 定义：ICS是一种通过AI技术将安全实践无缝集成到软件全生命周期（开发到运维）的框架，旨在统一传统割裂的DevSecOps（开发安全）和SecOps（运维安全）。 -...",
-    "tags": [
-      "AI",
-      "机器学习",
-      "总结",
-      "智能安全",
-      "AI驱动",
-      "DevSecOps",
-      "持续监控"
-    ],
-    "category": "信息安全",
-    "keyPoints": [
-      "AI集成安全流程",
-      "实时威胁检测",
-      "自动化安全测试"
-    ],
-    "filePath": "笔记/网络安全/智能持续安全（ICS）.md",
-    "relativePath": "笔记/网络安全/智能持续安全（ICS）.md",
-    "fileName": "智能持续安全（ICS）.md",
-    "fileSize": 13600,
-    "wordCount": 3376,
-    "readingTime": 14,
-    "language": "zh-CN",
-    "thumbnail": null,
-    "hasImages": false,
-    "hasCode": false,
-    "hasLinks": false,
-    "hasTables": false,
-    "hasMath": false,
-    "headings": [
-      {
-        "level": 3,
-        "text": "**1. 核心概念：智能持续安全（Intelligent Continuous Secur****ity, ICS）**",
-        "anchor": "1-核心概念智能持续安全intelligent-continuous-security-ics"
-      },
-      {
-        "level": 3,
-        "text": "**2. 传统安全模型的局限性**",
-        "anchor": "2-传统安全模型的局限性"
-      },
-      {
-        "level": 3,
-        "text": "**3. ICS的八大支柱实践**",
-        "anchor": "3-ics的八大支柱实践"
-      },
-      {
-        "level": 3,
-        "text": "**4. AI在ICS中的核心作用**",
-        "anchor": "4-ai在ics中的核心作用"
-      },
-      {
-        "level": 3,
-        "text": "**5. 实施路径：成熟度模型**",
-        "anchor": "5-实施路径成熟度模型"
-      },
-      {
-        "level": 3,
-        "text": "**6. 关键技术与工具**",
-        "anchor": "6-关键技术与工具"
-      },
-      {
-        "level": 3,
-        "text": "**7. 核心价值**",
-        "anchor": "7-核心价值"
-      },
-      {
-        "level": 3,
-        "text": "**总结**",
-        "anchor": "总结"
-      },
-      {
-        "level": 3,
-        "text": "1. **传统安全模型的局限性**",
-        "anchor": "1-传统安全模型的局限性"
-      },
-      {
-        "level": 3,
-        "text": "2. **ICS 的核心革新：统一与智能化**",
-        "anchor": "2-ics-的核心革新统一与智能化"
-      },
-      {
-        "level": 3,
-        "text": "3. **技术框架支柱**",
-        "anchor": "3-技术框架支柱"
-      },
-      {
-        "level": 3,
-        "text": "4. **AI 赋能的实践工具**",
-        "anchor": "4-ai-赋能的实践工具"
-      },
-      {
-        "level": 3,
-        "text": "5. **持续安全的文化转型**",
-        "anchor": "5-持续安全的文化转型"
-      },
-      {
-        "level": 3,
-        "text": "总结",
-        "anchor": "总结"
-      },
-      {
-        "level": 3,
-        "text": "**1. 时间线与历史演进**",
-        "anchor": "1-时间线与历史演进"
-      },
-      {
-        "level": 3,
-        "text": "**2. 安全模型对比数据**",
-        "anchor": "2-安全模型对比数据"
-      },
-      {
-        "level": 3,
-        "text": "**3. 风险案例统计数据**",
-        "anchor": "3-风险案例统计数据"
-      },
-      {
-        "level": 3,
-        "text": "**4. AI/ML在安全中的关键作用**",
-        "anchor": "4-aiml在安全中的关键作用"
-      },
-      {
-        "level": 3,
-        "text": "**5. 成熟度模型与团队拓扑**",
-        "anchor": "5-成熟度模型与团队拓扑"
-      },
-      {
-        "level": 3,
-        "text": "**6. 合规与法规数据**",
-        "anchor": "6-合规与法规数据"
-      },
-      {
-        "level": 3,
-        "text": "**总结**",
-        "anchor": "总结"
-      }
-    ],
-    "links": [],
-    "images": [],
-    "codeBlocks": [],
-    "createdAt": "2025-07-25T06:10:01.254Z",
-    "updatedAt": "2025-07-25T06:10:05.655Z",
-    "lastModified": 1753423805655,
-    "confidence": 0.8,
-    "generatedAt": "2025-08-04T11:02:51.872Z",
-    "author": null
-  },
-  {
-    "id": "56yU6K6wLe9kee7n",
-    "title": "汽车网络安全",
-    "description": "自动驾驶汽车CAN总线存在安全漏洞，文章提出基于数据优先级的IDS模型，结合DL和ML算法提升检测精度和效率，保障车辆安全。",
-    "excerpt": "根据提供的文章内容，以下是关于自动驾驶汽车网络安全的核心要点总结： 自动驾驶汽车（AVs）的控制器局域网（CAN总线）存在严重安全漏洞： - 缺乏加密和认证机制：CAN总线设计未考虑安全性，导致数据易被篡改或注入恶意指令。 - 攻击类型： - DoS攻击：通过高频发送高优先级消息（CAN ID=0000），阻塞正常通信。 - 模糊攻击：随机注入CAN ID和数据，破坏车辆功能。 -...",
-    "tags": [
-      "机器学习",
       "深度学习",
       "总结",
-      "自动驾驶",
-      "网络安全",
-      "入侵检测",
-      "数据优先级"
+      "AI能力",
+      "产业变革",
+      "数据战略",
+      "伦理挑战",
+      "人机共生"
     ],
-    "category": "汽车网络安全",
+    "category": "人工智能",
     "keyPoints": [
-      "CAN总线安全漏洞",
-      "数据优先级IDS模型",
-      "DL与ML结合"
+      "AI核心能力与演进",
+      "产业应用与变革",
+      "企业AI落地策略"
     ],
-    "filePath": "笔记/网络安全/汽车网络安全.md",
-    "relativePath": "笔记/网络安全/汽车网络安全.md",
-    "fileName": "汽车网络安全.md",
-    "fileSize": 3119,
-    "wordCount": 822,
+    "filePath": "笔记/网络安全/语音可控设备（VCDs）攻防.md",
+    "relativePath": "笔记/网络安全/语音可控设备（VCDs）攻防.md",
+    "fileName": "语音可控设备（VCDs）攻防.md",
+    "fileSize": 3279,
+    "wordCount": 848,
     "readingTime": 4,
     "language": "zh-CN",
     "thumbnail": null,
@@ -1068,113 +36,725 @@
     "headings": [
       {
         "level": 3,
-        "text": "**核心问题**",
-        "anchor": "核心问题"
+        "text": "**一、人工智能的核心能力与演进历程**",
+        "anchor": "一人工智能的核心能力与演进历程"
       },
       {
         "level": 3,
-        "text": "**创新解决方案：基于数据优先级的入侵检测系统（IDS）**",
-        "anchor": "创新解决方案基于数据优先级的入侵检测系统ids"
+        "text": "**二、AI驱动的产业变革**",
+        "anchor": "二ai驱动的产业变革"
       },
       {
         "level": 3,
-        "text": "**实验验证**",
-        "anchor": "实验验证"
+        "text": "**三、企业AI落地的关键策略**",
+        "anchor": "三企业ai落地的关键策略"
       },
       {
         "level": 3,
-        "text": "**实际意义**",
-        "anchor": "实际意义"
+        "text": "**四、AI伦理与未来挑战**",
+        "anchor": "四ai伦理与未来挑战"
       },
       {
         "level": 3,
-        "text": "**未来方向**",
-        "anchor": "未来方向"
+        "text": "**五、未来展望：人机共生**",
+        "anchor": "五未来展望人机共生"
       }
     ],
     "links": [],
     "images": [],
     "codeBlocks": [],
-    "createdAt": "2025-07-23T07:16:07.551Z",
-    "updatedAt": "2025-07-23T07:16:31.194Z",
-    "lastModified": 1753254991194,
+    "createdAt": "2025-08-04T11:10:04.088Z",
+    "updatedAt": "2025-08-04T11:10:16.585Z",
+    "lastModified": 1754305816585,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T11:02:51.871Z",
+    "generatedAt": "2025-08-04T11:10:41.937Z",
     "author": null
   },
   {
+    "id": "56yU6K6wLivremfs",
+    "title": "语音可控设备（VCDs）攻防",
+    "description": "无法生成AI摘要：ENOENT: no such file or directory, open '笔记/语音可控设备（VCDs）攻防.md'。请检查文件内容或API配置。",
+    "excerpt": null,
+    "tags": [
+      "错误",
+      "待处理"
+    ],
+    "category": "未分类",
+    "keyPoints": [
+      "生成失败",
+      "需要人工处理"
+    ],
+    "filePath": "笔记/语音可控设备（VCDs）攻防.md",
+    "relativePath": "笔记/语音可控设备（VCDs）攻防.md",
+    "fileName": "语音可控设备（VCDs）攻防.md",
+    "fileSize": 0,
+    "wordCount": 0,
+    "readingTime": 0,
+    "language": "unknown",
+    "thumbnail": null,
+    "hasImages": false,
+    "hasCode": false,
+    "hasLinks": false,
+    "hasTables": false,
+    "hasMath": false,
+    "createdAt": "2025-08-04T11:10:36.344Z",
+    "updatedAt": "2025-08-04T11:10:36.344Z",
+    "lastModified": 1754305836345,
+    "confidence": 0,
+    "generatedAt": "2025-08-04T11:10:36.345Z",
+    "error": "ENOENT: no such file or directory, open '笔记/语音可控设备（VCDs）攻防.md'"
+  },
+  {
     "id": "56yU6K6wLe9kee7n",
-    "title": "后量子时代AI安全",
-    "description": "后量子时代，AI与量子计算结合构成双重威胁。需采用后量子密码学（PQC）和去中心化架构防御，结合AI技术应对AGI风险，确保未来数字安全。",
-    "excerpt": "基于提供的文章摘要，以下是Post-Quantum Security for AI的核心内容提炼： --- - 定义：人工通用智能（AGI）超越人类智能并自主演化的临界点，标志着“人类时代”的终结（Vinge, 1993; Kurzweil, 2005）。 - 风险： - AGI可能自主生成合成身份、绕过传统认证系统（如生物识别和中心化数据库）。 -...",
+    "title": "COMTIA Security X认证",
+    "description": "本书阐述AI核心能力、发展历程及产业变革，强调数据战略与跨行业应用，关注伦理与安全挑战，展望人机共生未来。",
+    "excerpt": "根据提供的文章内容，其核心内容可归纳为以下要点： --- 1. AI三大核心能力 - 理解（Understanding）：自然语言处理使机器能理解人类意图（如客服自动化）。 - 推理（Reasoning）：逻辑分析解决复杂问题（如AlphaGo下棋、金融风险评估）。 - 学习（Learning）：通过数据自主优化模型（如深度学习在图像识别的应用）。 2. AI发展里程碑 -...",
+    "tags": [
+      "AI",
+      "深度学习",
+      "总结",
+      "AI发展",
+      "产业变革",
+      "数据战略",
+      "伦理安全",
+      "人机共生"
+    ],
+    "category": "人工智能",
+    "keyPoints": [
+      "AI核心能力与演进",
+      "AI驱动产业变革",
+      "企业AI落地策略"
+    ],
+    "filePath": "笔记/网络安全/COMTIA Security X认证.md",
+    "relativePath": "笔记/网络安全/COMTIA Security X认证.md",
+    "fileName": "COMTIA Security X认证.md",
+    "fileSize": 3279,
+    "wordCount": 848,
+    "readingTime": 4,
+    "language": "zh-CN",
+    "thumbnail": null,
+    "hasImages": false,
+    "hasCode": false,
+    "hasLinks": false,
+    "hasTables": false,
+    "hasMath": false,
+    "headings": [
+      {
+        "level": 3,
+        "text": "**一、人工智能的核心能力与演进历程**",
+        "anchor": "一人工智能的核心能力与演进历程"
+      },
+      {
+        "level": 3,
+        "text": "**二、AI驱动的产业变革**",
+        "anchor": "二ai驱动的产业变革"
+      },
+      {
+        "level": 3,
+        "text": "**三、企业AI落地的关键策略**",
+        "anchor": "三企业ai落地的关键策略"
+      },
+      {
+        "level": 3,
+        "text": "**四、AI伦理与未来挑战**",
+        "anchor": "四ai伦理与未来挑战"
+      },
+      {
+        "level": 3,
+        "text": "**五、未来展望：人机共生**",
+        "anchor": "五未来展望人机共生"
+      }
+    ],
+    "links": [],
+    "images": [],
+    "codeBlocks": [],
+    "createdAt": "2025-08-04T11:09:22.141Z",
+    "updatedAt": "2025-08-04T11:09:34.014Z",
+    "lastModified": 1754305774014,
+    "confidence": 0.8,
+    "generatedAt": "2025-08-04T11:10:00.924Z",
+    "author": null
+  },
+  {
+    "id": "56yU6K6wL0NPTVRJ",
+    "title": "COMTIA Security X认证",
+    "description": "本书探讨AI核心能力、产业变革、企业落地策略及伦理挑战，强调数据战略与跨行业应用，呼吁全球协作迈向人机共生。",
+    "excerpt": "根据提供的文章内容，其核心内容可归纳为以下要点： --- 1. AI三大核心能力 - 理解（Understanding）：自然语言处理使机器能理解人类意图（如客服自动化）。 - 推理（Reasoning）：逻辑分析解决复杂问题（如AlphaGo下棋、金融风险评估）。 - 学习（Learning）：通过数据自主优化模型（如深度学习在图像识别的应用）。 2. AI发展里程碑 -...",
+    "tags": [
+      "AI",
+      "深度学习",
+      "总结",
+      "AI发展",
+      "产业变革",
+      "数据战略",
+      "伦理挑战",
+      "人机共生"
+    ],
+    "category": "人工智能",
+    "keyPoints": [
+      "AI核心能力与演进",
+      "AI驱动产业变革",
+      "企业AI落地策略"
+    ],
+    "filePath": "笔记/COMTIA Security X认证.md",
+    "relativePath": "笔记/COMTIA Security X认证.md",
+    "fileName": "COMTIA Security X认证.md",
+    "fileSize": 3279,
+    "wordCount": 848,
+    "readingTime": 4,
+    "language": "zh-CN",
+    "thumbnail": null,
+    "hasImages": false,
+    "hasCode": false,
+    "hasLinks": false,
+    "hasTables": false,
+    "hasMath": false,
+    "headings": [
+      {
+        "level": 3,
+        "text": "**一、人工智能的核心能力与演进历程**",
+        "anchor": "一人工智能的核心能力与演进历程"
+      },
+      {
+        "level": 3,
+        "text": "**二、AI驱动的产业变革**",
+        "anchor": "二ai驱动的产业变革"
+      },
+      {
+        "level": 3,
+        "text": "**三、企业AI落地的关键策略**",
+        "anchor": "三企业ai落地的关键策略"
+      },
+      {
+        "level": 3,
+        "text": "**四、AI伦理与未来挑战**",
+        "anchor": "四ai伦理与未来挑战"
+      },
+      {
+        "level": 3,
+        "text": "**五、未来展望：人机共生**",
+        "anchor": "五未来展望人机共生"
+      }
+    ],
+    "links": [],
+    "images": [],
+    "codeBlocks": [],
+    "createdAt": "2025-08-04T11:09:22.141Z",
+    "updatedAt": "2025-08-04T11:09:34.014Z",
+    "lastModified": 1754305774014,
+    "confidence": 0.8,
+    "generatedAt": "2025-08-04T11:09:56.071Z",
+    "author": null
+  },
+  {
+    "id": "56yU6K6wLeuoeeQh",
+    "title": "技术 产业 AI发展路径",
+    "description": "AI发展历经理解、推理、学习三阶段，推动医疗、媒体、汽车、金融等产业变革。企业需以数据为核心，实施AI四步法，并关注伦理与安全挑战，最终迈向人机共生。",
+    "excerpt": "根据提供的文章内容，其核心内容可归纳为以下要点： --- 1. AI三大核心能力 - 理解（Understanding）：自然语言处理使机器能理解人类意图（如客服自动化）。 - 推理（Reasoning）：逻辑分析解决复杂问题（如AlphaGo下棋、金融风险评估）。 - 学习（Learning）：通过数据自主优化模型（如深度学习在图像识别的应用）。 2. AI发展里程碑 -...",
+    "tags": [
+      "AI",
+      "深度学习",
+      "总结",
+      "AI发展",
+      "产业变革",
+      "数据战略",
+      "伦理安全",
+      "人机共生"
+    ],
+    "category": "技术产业",
+    "keyPoints": [
+      "AI核心能力与演进",
+      "产业应用案例",
+      "企业AI落地策略"
+    ],
+    "filePath": "笔记/管理笔记/技术-产业-AI发展路径.md",
+    "relativePath": "笔记/管理笔记/技术-产业-AI发展路径.md",
+    "fileName": "技术-产业-AI发展路径.md",
+    "fileSize": 3279,
+    "wordCount": 848,
+    "readingTime": 4,
+    "language": "zh-CN",
+    "thumbnail": null,
+    "hasImages": false,
+    "hasCode": false,
+    "hasLinks": false,
+    "hasTables": false,
+    "hasMath": false,
+    "headings": [
+      {
+        "level": 3,
+        "text": "**一、人工智能的核心能力与演进历程**",
+        "anchor": "一人工智能的核心能力与演进历程"
+      },
+      {
+        "level": 3,
+        "text": "**二、AI驱动的产业变革**",
+        "anchor": "二ai驱动的产业变革"
+      },
+      {
+        "level": 3,
+        "text": "**三、企业AI落地的关键策略**",
+        "anchor": "三企业ai落地的关键策略"
+      },
+      {
+        "level": 3,
+        "text": "**四、AI伦理与未来挑战**",
+        "anchor": "四ai伦理与未来挑战"
+      },
+      {
+        "level": 3,
+        "text": "**五、未来展望：人机共生**",
+        "anchor": "五未来展望人机共生"
+      }
+    ],
+    "links": [],
+    "images": [],
+    "codeBlocks": [],
+    "createdAt": "2025-08-04T11:08:53.070Z",
+    "updatedAt": "2025-08-04T11:09:06.786Z",
+    "lastModified": 1754305746786,
+    "confidence": 0.8,
+    "generatedAt": "2025-08-04T11:09:25.227Z",
+    "author": null
+  },
+  {
+    "id": "56yU6K6wLaKgOacr",
+    "title": "技术-产业-AI发展路径",
+    "description": "无法生成AI摘要：ENOENT: no such file or directory, open '笔记/技术-产业-AI发展路径.md'。请检查文件内容或API配置。",
+    "excerpt": null,
+    "tags": [
+      "错误",
+      "待处理"
+    ],
+    "category": "未分类",
+    "keyPoints": [
+      "生成失败",
+      "需要人工处理"
+    ],
+    "filePath": "笔记/技术-产业-AI发展路径.md",
+    "relativePath": "笔记/技术-产业-AI发展路径.md",
+    "fileName": "技术-产业-AI发展路径.md",
+    "fileSize": 0,
+    "wordCount": 0,
+    "readingTime": 0,
+    "language": "unknown",
+    "thumbnail": null,
+    "hasImages": false,
+    "hasCode": false,
+    "hasLinks": false,
+    "hasTables": false,
+    "hasMath": false,
+    "createdAt": "2025-08-04T11:09:19.607Z",
+    "updatedAt": "2025-08-04T11:09:19.607Z",
+    "lastModified": 1754305759607,
+    "confidence": 0,
+    "generatedAt": "2025-08-04T11:09:19.607Z",
+    "error": "ENOENT: no such file or directory, open '笔记/技术-产业-AI发展路径.md'"
+  },
+  {
+    "id": "56yU6K6wLeuoeeQh",
+    "title": "生成式AI工业5.0",
+    "description": "《Empire of AI》揭示OpenAI从理想主义到商业帝国的蜕变，批判其资源掠夺、劳工剥削和治理失灵，呼吁重塑AI治理。",
+    "excerpt": "基于提供的文章内容，本书《Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI》的核心内容可总结如下： --- 本书通过深入剖析OpenAI的发展历程，揭示了一个理想主义非营利组织如何演变为追逐权力与商业利益的“AI帝国”，并批判其对社会、伦理和全球秩序的深远影响。作者Karen...",
     "tags": [
       "AI",
       "总结",
-      "后量子安全",
-      "AGI防御",
-      "PQC",
-      "去中心化",
-      "AI安全"
+      "OpenAI",
+      "AI伦理",
+      "技术垄断",
+      "治理失败"
     ],
-    "category": "AI与网络安全",
+    "category": "科技与社会",
     "keyPoints": [
-      "量子计算威胁",
-      "PQC解决方案",
-      "AGI防御策略"
+      "OpenAI商业化蜕变",
+      "资源与劳工剥削",
+      "治理结构矛盾"
     ],
-    "filePath": "笔记/网络安全/后量子时代AI安全.md",
-    "relativePath": "笔记/网络安全/后量子时代AI安全.md",
-    "fileName": "后量子时代AI安全.md",
-    "fileSize": 4249,
-    "wordCount": 1032,
-    "readingTime": 5,
+    "filePath": "笔记/管理笔记/生成式AI工业5.0.md",
+    "relativePath": "笔记/管理笔记/生成式AI工业5.0.md",
+    "fileName": "生成式AI工业5.0.md",
+    "fileSize": 22017,
+    "wordCount": 5798,
+    "readingTime": 24,
     "language": "zh-CN",
     "thumbnail": null,
     "hasImages": false,
     "hasCode": false,
     "hasLinks": false,
     "hasTables": true,
-    "hasMath": false,
+    "hasMath": true,
     "headings": [
       {
         "level": 3,
-        "text": "**1. 技术奇点（Technological Singularity）**",
-        "anchor": "1-技术奇点technological-singularity"
+        "text": "**核心主题**",
+        "anchor": "核心主题"
       },
       {
         "level": 3,
-        "text": "**2. 量子计算的威胁**",
-        "anchor": "2-量子计算的威胁"
+        "text": "**关键论点**",
+        "anchor": "关键论点"
       },
       {
         "level": 3,
-        "text": "**3. 后量子密码学（PQC）解决方案**",
-        "anchor": "3-后量子密码学pqc解决方案"
+        "text": "**结论**",
+        "anchor": "结论"
       },
       {
         "level": 3,
-        "text": "**4. 防御AGI威胁的策略**",
-        "anchor": "4-防御agi威胁的策略"
+        "text": "**核心观点总结**",
+        "anchor": "核心观点总结"
       },
       {
         "level": 3,
-        "text": "**5. 未来数字安全的挑战**",
-        "anchor": "5-未来数字安全的挑战"
+        "text": "**作者的核心主张**",
+        "anchor": "作者的核心主张"
       },
       {
         "level": 3,
-        "text": "**附：关键技术对照表**",
-        "anchor": "附关键技术对照表"
+        "text": "**关键例证（来自文章）**",
+        "anchor": "关键例证来自文章"
+      },
+      {
+        "level": 3,
+        "text": "**一、技术规模与资源消耗**",
+        "anchor": "一技术规模与资源消耗"
+      },
+      {
+        "level": 3,
+        "text": "**二、商业估值与市场影响**",
+        "anchor": "二商业估值与市场影响"
+      },
+      {
+        "level": 3,
+        "text": "**三、社会成本与伦理争议**",
+        "anchor": "三社会成本与伦理争议"
+      },
+      {
+        "level": 3,
+        "text": "**四、关键事件时间点**",
+        "anchor": "四关键事件时间点"
+      },
+      {
+        "level": 3,
+        "text": "**五、核心矛盾数据**",
+        "anchor": "五核心矛盾数据"
+      },
+      {
+        "level": 3,
+        "text": "**一、Sam Altman 个人成长案例**",
+        "anchor": "一sam-altman-个人成长案例"
+      },
+      {
+        "level": 3,
+        "text": "**二、职业与创业案例**",
+        "anchor": "二职业与创业案例"
+      },
+      {
+        "level": 3,
+        "text": "**三、OpenAI关键事件案例**",
+        "anchor": "三openai关键事件案例"
+      },
+      {
+        "level": 3,
+        "text": "**四、伦理与社会争议案例**",
+        "anchor": "四伦理与社会争议案例"
+      },
+      {
+        "level": 3,
+        "text": "**五、技术与社会影响案例**",
+        "anchor": "五技术与社会影响案例"
+      },
+      {
+        "level": 3,
+        "text": "**六、历史隐喻案例**",
+        "anchor": "六历史隐喻案例"
+      },
+      {
+        "level": 3,
+        "text": "**一、关键转变**",
+        "anchor": "一关键转变"
+      },
+      {
+        "level": 3,
+        "text": "**二、关键事件及影响**",
+        "anchor": "二关键事件及影响"
+      },
+      {
+        "level": 3,
+        "text": "**三、深层影响**",
+        "anchor": "三深层影响"
+      },
+      {
+        "level": 3,
+        "text": "**结论**",
+        "anchor": "结论"
+      },
+      {
+        "level": 3,
+        "text": "**一、组织架构变革**",
+        "anchor": "一组织架构变革"
+      },
+      {
+        "level": 3,
+        "text": "**二、公司治理机制变革**",
+        "anchor": "二公司治理机制变革"
+      },
+      {
+        "level": 3,
+        "text": "**三、关键事件佐证**",
+        "anchor": "三关键事件佐证"
+      },
+      {
+        "level": 3,
+        "text": "**结论**",
+        "anchor": "结论"
       }
     ],
     "links": [],
     "images": [],
     "codeBlocks": [],
-    "createdAt": "2025-07-25T05:50:34.063Z",
-    "updatedAt": "2025-07-25T05:51:01.070Z",
-    "lastModified": 1753422661070,
+    "createdAt": "2025-08-04T11:08:32.221Z",
+    "updatedAt": "2025-08-04T11:08:36.649Z",
+    "lastModified": 1754305716649,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T11:02:47.801Z",
+    "generatedAt": "2025-08-04T11:08:57.019Z",
     "author": null
+  },
+  {
+    "id": "56yU6K6wLeUnaIkO",
+    "title": "生成式AI工业5.0",
+    "description": "无法生成AI摘要：ENOENT: no such file or directory, open '笔记/生成式AI工业5.0.md'。请检查文件内容或API配置。",
+    "excerpt": null,
+    "tags": [
+      "错误",
+      "待处理"
+    ],
+    "category": "未分类",
+    "keyPoints": [
+      "生成失败",
+      "需要人工处理"
+    ],
+    "filePath": "笔记/生成式AI工业5.0.md",
+    "relativePath": "笔记/生成式AI工业5.0.md",
+    "fileName": "生成式AI工业5.0.md",
+    "fileSize": 0,
+    "wordCount": 0,
+    "readingTime": 0,
+    "language": "unknown",
+    "thumbnail": null,
+    "hasImages": false,
+    "hasCode": false,
+    "hasLinks": false,
+    "hasTables": false,
+    "hasMath": false,
+    "createdAt": "2025-08-04T11:08:51.030Z",
+    "updatedAt": "2025-08-04T11:08:51.030Z",
+    "lastModified": 1754305731030,
+    "confidence": 0,
+    "generatedAt": "2025-08-04T11:08:51.030Z",
+    "error": "ENOENT: no such file or directory, open '笔记/生成式AI工业5.0.md'"
+  },
+  {
+    "id": "56yU6K6wLeuoeeQh",
+    "title": "工业4.0",
+    "description": "《Empire of AI》揭示OpenAI从理想主义组织蜕变为追逐商业利益的AI帝国，批判其资源掠夺、劳工剥削和治理失灵，呼吁重塑AI治理。",
+    "excerpt": "基于提供的文章内容，本书《Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI》的核心内容可总结如下： --- 本书通过深入剖析OpenAI的发展历程，揭示了一个理想主义非营利组织如何演变为追逐权力与商业利益的“AI帝国”，并批判其对社会、伦理和全球秩序的深远影响。作者Karen...",
+    "tags": [
+      "AI",
+      "总结",
+      "OpenAI",
+      "AI伦理",
+      "技术垄断",
+      "治理危机"
+    ],
+    "category": "科技评论",
+    "keyPoints": [
+      "理想主义蜕变",
+      "殖民逻辑",
+      "权力斗争"
+    ],
+    "filePath": "笔记/管理笔记/工业4.0.md",
+    "relativePath": "笔记/管理笔记/工业4.0.md",
+    "fileName": "工业4.0.md",
+    "fileSize": 22017,
+    "wordCount": 5798,
+    "readingTime": 24,
+    "language": "zh-CN",
+    "thumbnail": null,
+    "hasImages": false,
+    "hasCode": false,
+    "hasLinks": false,
+    "hasTables": true,
+    "hasMath": true,
+    "headings": [
+      {
+        "level": 3,
+        "text": "**核心主题**",
+        "anchor": "核心主题"
+      },
+      {
+        "level": 3,
+        "text": "**关键论点**",
+        "anchor": "关键论点"
+      },
+      {
+        "level": 3,
+        "text": "**结论**",
+        "anchor": "结论"
+      },
+      {
+        "level": 3,
+        "text": "**核心观点总结**",
+        "anchor": "核心观点总结"
+      },
+      {
+        "level": 3,
+        "text": "**作者的核心主张**",
+        "anchor": "作者的核心主张"
+      },
+      {
+        "level": 3,
+        "text": "**关键例证（来自文章）**",
+        "anchor": "关键例证来自文章"
+      },
+      {
+        "level": 3,
+        "text": "**一、技术规模与资源消耗**",
+        "anchor": "一技术规模与资源消耗"
+      },
+      {
+        "level": 3,
+        "text": "**二、商业估值与市场影响**",
+        "anchor": "二商业估值与市场影响"
+      },
+      {
+        "level": 3,
+        "text": "**三、社会成本与伦理争议**",
+        "anchor": "三社会成本与伦理争议"
+      },
+      {
+        "level": 3,
+        "text": "**四、关键事件时间点**",
+        "anchor": "四关键事件时间点"
+      },
+      {
+        "level": 3,
+        "text": "**五、核心矛盾数据**",
+        "anchor": "五核心矛盾数据"
+      },
+      {
+        "level": 3,
+        "text": "**一、Sam Altman 个人成长案例**",
+        "anchor": "一sam-altman-个人成长案例"
+      },
+      {
+        "level": 3,
+        "text": "**二、职业与创业案例**",
+        "anchor": "二职业与创业案例"
+      },
+      {
+        "level": 3,
+        "text": "**三、OpenAI关键事件案例**",
+        "anchor": "三openai关键事件案例"
+      },
+      {
+        "level": 3,
+        "text": "**四、伦理与社会争议案例**",
+        "anchor": "四伦理与社会争议案例"
+      },
+      {
+        "level": 3,
+        "text": "**五、技术与社会影响案例**",
+        "anchor": "五技术与社会影响案例"
+      },
+      {
+        "level": 3,
+        "text": "**六、历史隐喻案例**",
+        "anchor": "六历史隐喻案例"
+      },
+      {
+        "level": 3,
+        "text": "**一、关键转变**",
+        "anchor": "一关键转变"
+      },
+      {
+        "level": 3,
+        "text": "**二、关键事件及影响**",
+        "anchor": "二关键事件及影响"
+      },
+      {
+        "level": 3,
+        "text": "**三、深层影响**",
+        "anchor": "三深层影响"
+      },
+      {
+        "level": 3,
+        "text": "**结论**",
+        "anchor": "结论"
+      },
+      {
+        "level": 3,
+        "text": "**一、组织架构变革**",
+        "anchor": "一组织架构变革"
+      },
+      {
+        "level": 3,
+        "text": "**二、公司治理机制变革**",
+        "anchor": "二公司治理机制变革"
+      },
+      {
+        "level": 3,
+        "text": "**三、关键事件佐证**",
+        "anchor": "三关键事件佐证"
+      },
+      {
+        "level": 3,
+        "text": "**结论**",
+        "anchor": "结论"
+      }
+    ],
+    "links": [],
+    "images": [],
+    "codeBlocks": [],
+    "createdAt": "2025-08-04T11:07:51.157Z",
+    "updatedAt": "2025-08-04T11:08:10.288Z",
+    "lastModified": 1754305690288,
+    "confidence": 0.8,
+    "generatedAt": "2025-08-04T11:08:24.685Z",
+    "author": null
+  },
+  {
+    "id": "56yU6K6wLW3peS4m",
+    "title": "工业4.0",
+    "description": "无法生成AI摘要：ENOENT: no such file or directory, open '笔记/工业4.0.md'。请检查文件内容或API配置。",
+    "excerpt": null,
+    "tags": [
+      "错误",
+      "待处理"
+    ],
+    "category": "未分类",
+    "keyPoints": [
+      "生成失败",
+      "需要人工处理"
+    ],
+    "filePath": "笔记/工业4.0.md",
+    "relativePath": "笔记/工业4.0.md",
+    "fileName": "工业4.0.md",
+    "fileSize": 0,
+    "wordCount": 0,
+    "readingTime": 0,
+    "language": "unknown",
+    "thumbnail": null,
+    "hasImages": false,
+    "hasCode": false,
+    "hasLinks": false,
+    "hasTables": false,
+    "hasMath": false,
+    "createdAt": "2025-08-04T11:08:18.297Z",
+    "updatedAt": "2025-08-04T11:08:18.297Z",
+    "lastModified": 1754305698297,
+    "confidence": 0,
+    "generatedAt": "2025-08-04T11:08:18.297Z",
+    "error": "ENOENT: no such file or directory, open '笔记/工业4.0.md'"
   }
 ]
