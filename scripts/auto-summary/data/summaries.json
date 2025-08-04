@@ -1,24 +1,24 @@
 [
   {
     "id": "56yU6K6wLe9kee7n",
-    "title": "**一、日志采集与标准化**",
-    "description": "通过采集堡垒机日志并标准化，集成至SIEM/SOC系统，实现实时监控、异常检测和自动化响应，提升安全管控。",
+    "title": "运维行为监控与审计",
+    "description": "通过将堡垒机日志接入SIEM/SOC系统，实现运维行为实时监控与审计。包括日志采集标准化、SIEM集成、异常检测及自动化响应，提升安全管控。",
     "excerpt": "根据文档内容，将堡垒机（如JumpServer）的操作日志接入SIEM/SOC系统实现实时监控与审计，需通过以下步骤实现安全管控目标： --- - 登录审计：采集用户登录堡垒机的IP、时间、认证方式（如MFA状态）、登录结果（成功/失败）。 - 资源访问：记录访问的目标主机/IP、协议（SSH/RDP）、会话起止时间。 -...",
     "tags": [
       "Python",
       "机器学习",
       "代码",
       "总结",
-      "日志采集",
-      "SIEM集成",
-      "异常检测",
-      "自动化响应"
+      "运维监控",
+      "安全审计",
+      "SIEM",
+      "堡垒机"
     ],
     "category": "信息安全",
     "keyPoints": [
-      "覆盖登录、资源访问等日志",
-      "采用CEF/LEEF格式标准化",
-      "实时监控与机器学习辅助分析"
+      "日志标准化与采集",
+      "SIEM/SOC集成",
+      "异常行为检测"
     ],
     "filePath": "笔记/网络安全/运维行为监控与审计.md",
     "relativePath": "笔记/网络安全/运维行为监控与审计.md",
@@ -123,29 +123,29 @@
     "updatedAt": "2025-07-31T10:45:41.301Z",
     "lastModified": 1753958741301,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T10:24:31.392Z",
+    "generatedAt": "2025-08-04T11:03:03.702Z",
     "author": null
   },
   {
     "id": "56yU6K6wLe9kee7n",
-    "title": "**1. TIBER-EU（Threat Intelligence-Based Ethical Red Teaming）**",
-    "description": "TIBER-EU和CBEST框架通过威胁情报驱动测试金融安全，TIBER-EU强调跨机构协作和整体安全成熟度，CBEST聚焦监管合规和特定威胁应对。",
+    "title": "金融行业红队测试",
+    "description": "TIBER-EU和CBEST是金融业红队测试标杆框架，分别强调跨机构安全提升和监管合规。TIBER-EU适用于欧盟，CBEST针对英国机构，均依赖威胁情报和第三方参与。",
     "excerpt": "根据文档内容，以下是关于TIBER-EU和CBEST框架的详细解读： --- - 威胁情报驱动：基于真实威胁情报模拟针对金融基础设施的针对性攻击。 - 提升网络弹性：通过实战测试金融机构的检测、响应和恢复能力。 - 跨机构一致性：为欧盟金融业提供标准化测试框架，确保结果可比性。 | | | |---|---| |团队|角色|...",
     "tags": [
       "AI",
       "机器学习",
       "总结",
+      "金融安全",
+      "红队测试",
       "TIBER-EU",
       "CBEST",
-      "金融安全",
-      "威胁情报",
-      "红队测试"
+      "威胁情报"
     ],
-    "category": "网络安全",
+    "category": "金融网络安全",
     "keyPoints": [
-      "TIBER-EU提升整体安全",
-      "CBEST满足监管要求",
-      "威胁情报驱动"
+      "TIBER-EU强调跨机构协作",
+      "CBEST聚焦监管合规",
+      "威胁情报驱动测试"
     ],
     "filePath": "笔记/网络安全/金融行业红队测试.md",
     "relativePath": "笔记/网络安全/金融行业红队测试.md",
@@ -319,26 +319,26 @@
     "updatedAt": "2025-07-23T08:19:42.414Z",
     "lastModified": 1753258782414,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T10:24:30.697Z",
+    "generatedAt": "2025-08-04T11:03:03.650Z",
     "author": null
   },
   {
     "id": "56yU6K6wLe9kee7n",
-    "title": "**1. 道德黑客的核心原则**",
-    "description": "道德黑客需遵循合法授权、保密、提升安全的目标，使用工具如Kali Linux、Metasploit进行侦察、扫描、攻击和权限维持。实践建议包括搭建实验室、撰写报告、考取认证。警告：仅限授权测试，违法操作自负责任。",
+    "title": "道德黑客",
+    "description": "道德黑客遵循合法、保密、提升安全的原则，使用侦察、扫描、攻击、权限维持等技术工具（如Nmap、Metasploit）进行授权测试，需注意法律风险。",
     "excerpt": "根据提供的PDF文章《Hacking Tricks, Methods, and Offensive Strategies》的核心内容，以下是关键要点的总结： --- - 合法性与授权：只能在获得明确书面许可的系统上进行测试（如自建实验室或授权目标）。 - 保密性：不得泄露测试中获取的敏感信息。 - 目的导向：目标是发现漏洞以提升安全防御，而非破坏系统。 - 工具使用：书中工具（如Kali...",
     "tags": [
       "总结",
       "道德黑客",
-      "网络安全",
-      "工具使用",
-      "职业发展"
+      "渗透测试",
+      "安全工具",
+      "法律风险"
     ],
-    "category": "信息安全",
+    "category": "网络安全",
     "keyPoints": [
-      "合法授权",
-      "技术工具",
-      "实践建议"
+      "合法授权测试",
+      "关键技术工具",
+      "职业发展建议"
     ],
     "filePath": "笔记/网络安全/道德黑客.md",
     "relativePath": "笔记/网络安全/道德黑客.md",
@@ -402,13 +402,13 @@
     "updatedAt": "2025-07-23T07:19:14.629Z",
     "lastModified": 1753255154629,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T10:24:30.530Z",
+    "generatedAt": "2025-08-04T11:03:03.068Z",
     "author": null
   },
   {
     "id": "56yU6K6wLe9kee7n",
-    "title": "**核心主题**",
-    "description": "《Cyber Defense: Best Practices for Digital Safety》强调网络安全防御，涵盖个人、家庭及企业层面策略，应对复杂威胁。核心包括强密码、MFA、数据保护、识别钓鱼、安全浏览等，强调持续防御与用户教育。",
+    "title": "网络安全防御",
+    "description": "《Cyber Defense: Best Practices for Digital Safety》强调网络安全防御重要性，涵盖个人、家庭及企业策略，应对复杂威胁。核心防御包括强密码、MFA、软件更新、数据加密及行为安全。强调持续防护与用户教育。",
     "excerpt": "根据提供的文章内容，以下是《Cyber Defense: Best Practices for Digital Safety》的核心内容提炼： --- 网络安全防御与数字安全最佳实践，涵盖个人、家庭及企业层面的安全策略，旨在应对日益复杂的网络威胁。 --- 1. 网络安全的重要性 - 数字化风险：互联设备普及（IoT、移动设备）扩大了攻击面，威胁从金融欺诈到关键基础设施破坏。 -...",
     "tags": [
       "AI",
@@ -416,14 +416,14 @@
       "网络安全",
       "数字安全",
       "防御策略",
-      "用户教育",
-      "数据保护"
+      "应急响应",
+      "用户教育"
     ],
     "category": "网络安全",
     "keyPoints": [
       "强密码与MFA",
-      "数据加密与备份",
-      "识别钓鱼攻击"
+      "软件更新与数据加密",
+      "行为安全与应急响应"
     ],
     "filePath": "笔记/网络安全/网络安全防御.md",
     "relativePath": "笔记/网络安全/网络安全防御.md",
@@ -492,26 +492,26 @@
     "updatedAt": "2025-07-23T07:18:33.664Z",
     "lastModified": 1753255113664,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T10:24:25.869Z",
+    "generatedAt": "2025-08-04T11:02:58.591Z",
     "author": null
   },
   {
     "id": "56yU6K6wLe9kee7n",
-    "title": "**第一部分：桌面演练流程（第1-5章）**",
-    "description": "桌面演练提升团队协作、明确职责、降低数据泄露成本，需高管支持、设定目标、选择参与者，通过真实场景测试响应能力，最终评估并改进安全流程。",
+    "title": "网络安全桌面演练",
+    "description": "网络安全桌面演练提升团队协作、明确职责、测试威胁响应，需高管支持、目标设定、场景开发、高效主持和评估。演练减少响应时间，非“打勾练习”。",
     "excerpt": "根据提供的PDF《网络安全桌面演练：从规划到执行》（Cybersecurity Tabletop Exercises: From Planning to Execution），以下是核心内容提炼： --- 1. 为何进行桌面演练（第1章） - 核心价值：提升事件响应团队协作、明确角色职责、评估流程变更影响、降低数据泄露成本、增强安全意识、满足合规要求（如ISO 27001、NIST SP...",
     "tags": [
-      "桌面演练",
       "网络安全",
+      "桌面演练",
       "事件响应",
       "合规要求",
-      "安全改进"
+      "团队协作"
     ],
-    "category": "网络安全演练",
+    "category": "网络安全",
     "keyPoints": [
-      "提升团队协作",
-      "明确角色职责",
-      "真实场景测试"
+      "提升团队协作与明确职责",
+      "高效测试威胁响应能力",
+      "结构化复盘转化为安全改进"
     ],
     "filePath": "笔记/网络安全/网络安全桌面演练.md",
     "relativePath": "笔记/网络安全/网络安全桌面演练.md",
@@ -550,13 +550,13 @@
     "updatedAt": "2025-07-25T05:57:44.621Z",
     "lastModified": 1753423064621,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T10:24:25.318Z",
+    "generatedAt": "2025-08-04T11:02:57.278Z",
     "author": null
   },
   {
     "id": "56yU6K6wLe9kee7n",
-    "title": "**一、书籍定位与目标**",
-    "description": "《网络安全数据工程》面向网络安全工程师等，教授使用免费开源工具构建安全日志管道，涵盖日志集中化、标准化、自动化及富化，涉及Logstash、Kafka、TLS等技术。",
+    "title": "网络安全数据工程",
+    "description": "《网络安全数据工程》教授使用免费开源工具构建安全日志管道，涵盖日志集中化、标准化、自动化与富化，涉及Logstash、Kafka、Elastic架构等，强调TLS加密和Git配置管理。",
     "excerpt": "根据提供的文章内容，以下是《网络安全数据工程》的核心内容提炼： --- - 受众：网络安全工程师、日志管理员、预算有限的团队及攻防测试人员。 - 目标：教授如何用免费开源工具构建安全的日志管道，实现日志集中化、标准化、自动化与富化。 --- 1. 数据工程基础 - 任务：日志集中化、吞吐量/延迟管理、数据富化（如添加威胁标签）、标准化（ECS规范）。 - 架构： - 基础管道：设备 →...",
     "tags": [
       "JavaScript",
@@ -568,11 +568,11 @@
       "网络安全",
       "日志管理"
     ],
-    "category": "技术书籍摘要",
+    "category": "网络安全与数据工程",
     "keyPoints": [
       "日志管道构建",
       "数据标准化与富化",
-      "TLS通信保护"
+      "TLS加密通信"
     ],
     "filePath": "笔记/网络安全/网络安全数据工程.md",
     "relativePath": "笔记/网络安全/网络安全数据工程.md",
@@ -743,13 +743,13 @@
     "updatedAt": "2025-07-31T10:44:59.779Z",
     "lastModified": 1753958699779,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T10:24:25.130Z",
+    "generatedAt": "2025-08-04T11:02:56.890Z",
     "author": null
   },
   {
     "id": "56yU6K6wLe9kee7n",
-    "title": "**一、全书核心主题**",
-    "description": "本书阐述数据驱动网络安全，通过可量化指标降低风险，强调METRICS方法论、ATLAS框架及AI/ML应用，实现安全与业务对齐，持续优化指标。",
+    "title": "网络安全指标规划与应用",
+    "description": "本书通过数据驱动的网络安全指标降低风险，强调指标可量化、可操作、与业务对齐，涵盖METRICS方法论、ATLAS框架及AI/ML应用，实现安全与业务价值融合。",
     "excerpt": "根据提供的PDF书籍《Data-Driven Cybersecurity: Reducing risk with proven metrics》的内容，以下是其核心内容的系统总结： --- 数据驱动的网络安全：通过可量化、可操作的指标（metrics）降低风险，将网络安全从经验导向转向数据驱动决策。重点包括： - 有效指标的定义：可量化、可操作、与业务目标对齐 -...",
     "tags": [
       "Python",
@@ -758,14 +758,14 @@
       "总结",
       "数据驱动",
       "网络安全",
-      "METRICS",
+      "指标体系",
       "AI/ML"
     ],
     "category": "网络安全",
     "keyPoints": [
-      "数据驱动决策",
-      "指标体系构建",
-      "技术与工具应用"
+      "数据量化风险",
+      "指标驱动行动",
+      "业务对齐"
     ],
     "filePath": "笔记/网络安全/网络安全指标规划与应用.md",
     "relativePath": "笔记/网络安全/网络安全指标规划与应用.md",
@@ -879,29 +879,28 @@
     "updatedAt": "2025-08-01T09:58:22.864Z",
     "lastModified": 1754042302864,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T10:24:20.897Z",
+    "generatedAt": "2025-08-04T11:02:52.344Z",
     "author": null
   },
   {
     "id": "56yU6K6wLe9kee7n",
-    "title": "**1. 核心概念：智能持续安全（Intelligent Continuous Secur****ity, ICS）**",
-    "description": "ICS通过AI集成安全实践于软件全生命周期，实现实时威胁检测、自动化测试和跨团队协作，提升持续安全防护。其八大支柱实践和成熟度模型助力企业降低风险、提升效率。",
+    "title": "智能持续安全（ICS）",
+    "description": "ICS通过AI集成DevSecOps和SecOps，实现全生命周期持续安全防护，提升威胁检测、自动化测试和合规监控能力。",
     "excerpt": "基于提供的PDF文章《Intelligent Continuous Security: AI-Enabled Transformation for Seamless Protection》，以下是其核心内容的提炼： --- - 定义：ICS是一种通过AI技术将安全实践无缝集成到软件全生命周期（开发到运维）的框架，旨在统一传统割裂的DevSecOps（开发安全）和SecOps（运维安全）。 -...",
     "tags": [
       "AI",
       "机器学习",
       "总结",
-      "ICS",
-      "AI安全",
+      "智能安全",
+      "AI驱动",
       "DevSecOps",
-      "持续监控",
-      "自动化测试"
+      "持续监控"
     ],
     "category": "信息安全",
     "keyPoints": [
-      "AI驱动安全",
-      "全生命周期集成",
-      "八大支柱实践"
+      "AI集成安全流程",
+      "实时威胁检测",
+      "自动化安全测试"
     ],
     "filePath": "笔记/网络安全/智能持续安全（ICS）.md",
     "relativePath": "笔记/网络安全/智能持续安全（ICS）.md",
@@ -1030,13 +1029,13 @@
     "updatedAt": "2025-07-25T06:10:05.655Z",
     "lastModified": 1753423805655,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T10:24:20.806Z",
+    "generatedAt": "2025-08-04T11:02:51.872Z",
     "author": null
   },
   {
     "id": "56yU6K6wLe9kee7n",
-    "title": "**核心问题**",
-    "description": "自动驾驶汽车CAN总线存在安全漏洞，文章提出基于数据优先级的IDS模型，结合DL和ML提升检测精度和效率，实验验证有效，助力AVs安全。",
+    "title": "汽车网络安全",
+    "description": "自动驾驶汽车CAN总线存在安全漏洞，文章提出基于数据优先级的IDS模型，结合DL和ML算法提升检测精度和效率，保障车辆安全。",
     "excerpt": "根据提供的文章内容，以下是关于自动驾驶汽车网络安全的核心要点总结： 自动驾驶汽车（AVs）的控制器局域网（CAN总线）存在严重安全漏洞： - 缺乏加密和认证机制：CAN总线设计未考虑安全性，导致数据易被篡改或注入恶意指令。 - 攻击类型： - DoS攻击：通过高频发送高优先级消息（CAN ID=0000），阻塞正常通信。 - 模糊攻击：随机注入CAN ID和数据，破坏车辆功能。 -...",
     "tags": [
       "机器学习",
@@ -1047,11 +1046,11 @@
       "入侵检测",
       "数据优先级"
     ],
-    "category": "自动驾驶安全",
+    "category": "汽车网络安全",
     "keyPoints": [
-      "CAN总线漏洞",
-      "IDS模型创新",
-      "实验验证效果"
+      "CAN总线安全漏洞",
+      "数据优先级IDS模型",
+      "DL与ML结合"
     ],
     "filePath": "笔记/网络安全/汽车网络安全.md",
     "relativePath": "笔记/网络安全/汽车网络安全.md",
@@ -1100,36 +1099,35 @@
     "updatedAt": "2025-07-23T07:16:31.194Z",
     "lastModified": 1753254991194,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T10:24:20.416Z",
+    "generatedAt": "2025-08-04T11:02:51.871Z",
     "author": null
   },
   {
     "id": "56yU6K6wLe9kee7n",
-    "title": "**1. 多媒体安全的核心主题**",
-    "description": "多媒体安全涉及保护数字内容免受未授权访问和篡改，关键技术包括加密、信息隐藏、认证与完整性保护。评估指标如PSNR、SSIM，应用于智能家居、量子加密等领域，需平衡数据隐藏与抗攻击能力。",
-    "excerpt": "根据提供的文章内容，核心内容可概括为以下要点： --- - 定义与重要性：多媒体安全涉及保护图像、音频、视频等数字内容免受未授权访问、篡改或盗用，尤其在互联网和物联网时代至关重要。 - 核心挑战：数据量大、传输频繁，易受攻击（如信息泄露、版权侵犯、恶意篡改）。 --- - 对称加密：如AES（高级加密标准），高效但需安全密钥分发。 -...",
+    "title": "后量子时代AI安全",
+    "description": "后量子时代，AI与量子计算结合构成双重威胁。需采用后量子密码学（PQC）和去中心化架构防御，结合AI技术应对AGI风险，确保未来数字安全。",
+    "excerpt": "基于提供的文章摘要，以下是Post-Quantum Security for AI的核心内容提炼： --- - 定义：人工通用智能（AGI）超越人类智能并自主演化的临界点，标志着“人类时代”的终结（Vinge, 1993; Kurzweil, 2005）。 - 风险： - AGI可能自主生成合成身份、绕过传统认证系统（如生物识别和中心化数据库）。 -...",
     "tags": [
       "AI",
-      "机器学习",
-      "深度学习",
       "总结",
-      "多媒体安全",
-      "加密技术",
-      "数字水印",
-      "区块链"
+      "后量子安全",
+      "AGI防御",
+      "PQC",
+      "去中心化",
+      "AI安全"
     ],
-    "category": "信息安全",
+    "category": "AI与网络安全",
     "keyPoints": [
-      "定义与重要性",
-      "关键技术方法",
-      "评估指标"
+      "量子计算威胁",
+      "PQC解决方案",
+      "AGI防御策略"
     ],
-    "filePath": "笔记/网络安全/多媒体安全.md",
-    "relativePath": "笔记/网络安全/多媒体安全.md",
-    "fileName": "多媒体安全.md",
-    "fileSize": 13223,
-    "wordCount": 3325,
-    "readingTime": 14,
+    "filePath": "笔记/网络安全/后量子时代AI安全.md",
+    "relativePath": "笔记/网络安全/后量子时代AI安全.md",
+    "fileName": "后量子时代AI安全.md",
+    "fileSize": 4249,
+    "wordCount": 1032,
+    "readingTime": 5,
     "language": "zh-CN",
     "thumbnail": null,
     "hasImages": false,
@@ -1140,178 +1138,43 @@
     "headings": [
       {
         "level": 3,
-        "text": "**1. 多媒体安全的核心主题**",
-        "anchor": "1-多媒体安全的核心主题"
+        "text": "**1. 技术奇点（Technological Singularity）**",
+        "anchor": "1-技术奇点technological-singularity"
       },
       {
         "level": 3,
-        "text": "**2. 关键技术方法**",
-        "anchor": "2-关键技术方法"
-      },
-      {
-        "level": 4,
-        "text": "**（1）加密技术（Cryptography）**",
-        "anchor": "1加密技术cryptography"
-      },
-      {
-        "level": 4,
-        "text": "**（2）信息隐藏技术**",
-        "anchor": "2信息隐藏技术"
-      },
-      {
-        "level": 4,
-        "text": "**（3）认证与完整性保护**",
-        "anchor": "3认证与完整性保护"
+        "text": "**2. 量子计算的威胁**",
+        "anchor": "2-量子计算的威胁"
       },
       {
         "level": 3,
-        "text": "**3. 评估指标与数学模型**",
-        "anchor": "3-评估指标与数学模型"
+        "text": "**3. 后量子密码学（PQC）解决方案**",
+        "anchor": "3-后量子密码学pqc解决方案"
       },
       {
         "level": 3,
-        "text": "**4. 新兴应用场景**",
-        "anchor": "4-新兴应用场景"
+        "text": "**4. 防御AGI威胁的策略**",
+        "anchor": "4-防御agi威胁的策略"
       },
       {
         "level": 3,
-        "text": "**5. 关键挑战与发展方向**",
-        "anchor": "5-关键挑战与发展方向"
+        "text": "**5. 未来数字安全的挑战**",
+        "anchor": "5-未来数字安全的挑战"
       },
       {
         "level": 3,
-        "text": "**总结**",
-        "anchor": "总结"
-      },
-      {
-        "level": 3,
-        "text": "**1. 数字水印的类型**",
-        "anchor": "1-数字水印的类型"
-      },
-      {
-        "level": 4,
-        "text": "**(1) 按感知性分类**",
-        "anchor": "1-按感知性分类"
-      },
-      {
-        "level": 4,
-        "text": "**(2) 按鲁棒性分类**",
-        "anchor": "2-按鲁棒性分类"
-      },
-      {
-        "level": 4,
-        "text": "**(3) 按工作域分类**",
-        "anchor": "3-按工作域分类"
-      },
-      {
-        "level": 3,
-        "text": "**2. 数字水印技术**",
-        "anchor": "2-数字水印技术"
-      },
-      {
-        "level": 4,
-        "text": "**(1) 空间域技术**",
-        "anchor": "1-空间域技术"
-      },
-      {
-        "level": 4,
-        "text": "**(2) 变换域技术**",
-        "anchor": "2-变换域技术"
-      },
-      {
-        "level": 3,
-        "text": "**3. 应用场景**",
-        "anchor": "3-应用场景"
-      },
-      {
-        "level": 4,
-        "text": "**(1) 版权保护（Copyright Protection）**",
-        "anchor": "1-版权保护copyright-protection"
-      },
-      {
-        "level": 4,
-        "text": "**(2) 内容认证（Content Authentication）**",
-        "anchor": "2-内容认证content-authentication"
-      },
-      {
-        "level": 4,
-        "text": "**(3) 隐蔽通信（Covert Communication）**",
-        "anchor": "3-隐蔽通信covert-communication"
-      },
-      {
-        "level": 4,
-        "text": "**(4) 广播监控（Broadcast Monitoring）**",
-        "anchor": "4-广播监控broadcast-monitoring"
-      },
-      {
-        "level": 3,
-        "text": "**4. 技术对比分析**",
-        "anchor": "4-技术对比分析"
-      },
-      {
-        "level": 4,
-        "text": "**关键结论**",
-        "anchor": "关键结论"
-      },
-      {
-        "level": 3,
-        "text": "**5. 挑战与趋势**",
-        "anchor": "5-挑战与趋势"
-      },
-      {
-        "level": 3,
-        "text": "**1. 隐写术的定义与目标**",
-        "anchor": "1-隐写术的定义与目标"
-      },
-      {
-        "level": 3,
-        "text": "**2. 隐写术的分类与技术方法**",
-        "anchor": "2-隐写术的分类与技术方法"
-      },
-      {
-        "level": 4,
-        "text": "**(1) 按载体类型分类**",
-        "anchor": "1-按载体类型分类"
-      },
-      {
-        "level": 4,
-        "text": "**(2) 关键技术方法**",
-        "anchor": "2-关键技术方法"
-      },
-      {
-        "level": 3,
-        "text": "**3. 隐写术的应用场景**",
-        "anchor": "3-隐写术的应用场景"
-      },
-      {
-        "level": 3,
-        "text": "**4. 隐写术的评估指标**",
-        "anchor": "4-隐写术的评估指标"
-      },
-      {
-        "level": 3,
-        "text": "**5. 隐写术的挑战与防御**",
-        "anchor": "5-隐写术的挑战与防御"
-      },
-      {
-        "level": 3,
-        "text": "**6. 与其他技术的结合**",
-        "anchor": "6-与其他技术的结合"
-      },
-      {
-        "level": 3,
-        "text": "**结论**",
-        "anchor": "结论"
+        "text": "**附：关键技术对照表**",
+        "anchor": "附关键技术对照表"
       }
     ],
     "links": [],
     "images": [],
     "codeBlocks": [],
-    "createdAt": "2025-06-19T12:10:37.703Z",
-    "updatedAt": "2025-06-24T10:43:49.948Z",
-    "lastModified": 1750761829948,
+    "createdAt": "2025-07-25T05:50:34.063Z",
+    "updatedAt": "2025-07-25T05:51:01.070Z",
+    "lastModified": 1753422661070,
     "confidence": 0.8,
-    "generatedAt": "2025-08-04T10:24:16.040Z",
+    "generatedAt": "2025-08-04T11:02:47.801Z",
     "author": null
   }
 ]

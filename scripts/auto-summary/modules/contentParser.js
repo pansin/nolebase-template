@@ -100,21 +100,29 @@ class ContentParser {
       return parsed.data.title.toString().trim()
     }
 
-    // 2. 从内容中提取第一个一级标题
+    // 2. 使用文件名作为标题（优先级提高）
+    const basename = path.basename(filePath, path.extname(filePath))
+    const fileTitle = basename.replace(/[-_]/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+    
+    // 如果文件名不是默认格式，直接使用
+    if (basename !== 'index' && basename !== 'README' && basename.length > 2) {
+      return fileTitle
+    }
+
+    // 3. 从内容中提取第一个一级标题
     const h1Match = parsed.content.match(/^#\s+(.+)$/m)
     if (h1Match) {
       return h1Match[1].trim()
     }
 
-    // 3. 从内容中提取第一个任意级别标题
+    // 4. 从内容中提取第一个任意级别标题
     const headingMatch = parsed.content.match(/^#{1,6}\s+(.+)$/m)
     if (headingMatch) {
       return headingMatch[1].trim()
     }
 
-    // 4. 使用文件名作为标题
-    const basename = path.basename(filePath, path.extname(filePath))
-    return basename.replace(/[-_]/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+    // 5. 最后使用文件名
+    return fileTitle
   }
 
   /**

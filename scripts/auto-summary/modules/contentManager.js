@@ -168,9 +168,15 @@ class ContentManager {
    * 渲染摘要卡片
    */
   renderSummaryCard(summary) {
+    // 处理链接路径，移除.md扩展名并确保正确的VitePress链接格式
+    let linkPath = summary.relativePath
+    if (linkPath.endsWith('.md')) {
+      linkPath = linkPath.slice(0, -3) // 移除.md扩展名
+    }
+    
     const templateData = {
       title: this.escapeMarkdown(summary.title),
-      relativePath: summary.relativePath,
+      relativePath: linkPath,
       category: summary.category || '未分类',
       createdDate: this.formatDate(summary.createdAt),
       wordCount: summary.wordCount || 0,
