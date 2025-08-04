@@ -168,11 +168,24 @@ class ContentManager {
    * 渲染摘要卡片
    */
   renderSummaryCard(summary) {
-    // 处理链接路径，移除.md扩展名并确保正确的VitePress链接格式
+    // 处理链接路径，确保正确的VitePress链接格式
     let linkPath = summary.relativePath
+    
+    // 移除.md扩展名
     if (linkPath.endsWith('.md')) {
-      linkPath = linkPath.slice(0, -3) // 移除.md扩展名
+      linkPath = linkPath.slice(0, -3)
     }
+    
+    // 确保链接以/开头（绝对路径）
+    if (!linkPath.startsWith('/')) {
+      linkPath = '/' + linkPath
+    }
+    
+    // URL编码处理中文字符
+    linkPath = linkPath.split('/').map(segment => {
+      // 对每个路径段进行URL编码，但保留斜杠
+      return encodeURIComponent(segment)
+    }).join('/')
     
     const templateData = {
       title: this.escapeMarkdown(summary.title),
