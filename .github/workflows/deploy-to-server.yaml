@@ -53,13 +53,20 @@ jobs:
       - name: 构建
         run: pnpm docs:build
 
+      - name: 配置 SSH 密钥
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p ${{ secrets.REMOTE_PORT || '22' }} ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+
       - name: 部署到服务器
-        uses: easingthemes/ssh-deploy@v4
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          REMOTE_PORT: ${{ secrets.REMOTE_PORT || '22' }}
-          SOURCE: .vitepress/dist/
-          TARGET: ${{ secrets.DEPLOY_PATH }}
-          ARGS: -avz --delete
+        run: |
+          rsync -avz --delete \
+            -e "ssh -p ${{ secrets.REMOTE_PORT || '22' }} -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+            .vitepress/dist/ \
+            ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.DEPLOY_PATH }}
+
+      - name: 清理密钥
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
