@@ -19,6 +19,9 @@ const MARKER_END = '<!-- AUTO_LATEST_NOTES_END -->'
 
 const git = Git(DIR_ROOT)
 
+// 确保 git 不转义非 ASCII 路径（CI 环境下默认会转义中文路径）
+await git.addConfig('core.quotePath', 'false')
+
 interface NoteInfo {
   filePath: string
   title: string

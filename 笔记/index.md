@@ -10,6 +10,12 @@
 
 > 以下是最近更新的 10 篇笔记（基于 Git 提交记录自动生成）
 
+### 📝 [VitePress 站点构建失败排查与 GitHub Actions 自动化部署实践](/%E7%AC%94%E8%AE%B0/%E5%8E%9F%E5%88%9B%E6%96%87%E7%AB%A0/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/VitePress%E7%AB%99%E7%82%B9%E6%9E%84%E5%BB%BA%E5%A4%B1%E8%B4%A5%E6%8E%92%E6%9F%A5%E4%B8%8EGitHub%20Actions%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%AE%9E%E8%B7%B5)
+
+**分类**: 原创文章 | **更新日期**: 2026-03-10 | **字数**: 2142 | **阅读时间**: 9分钟
+
+---
+
 ### 📝 [全球网络安全事件管理新格局：中国、欧盟与美国的战略演进与比较研究](/%E7%AC%94%E8%AE%B0/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/global_cybersecurity_incident_management_strategic_evolution_china_eu_us)
 
 **分类**: 网络安全 | **更新日期**: 2026-03-10 | **字数**: 4514 | **阅读时间**: 19分钟
@@ -61,12 +67,6 @@
 ### 📝 [EAPP（终端应用保护平台）产品规划与设计](/%E7%AC%94%E8%AE%B0/EAPP%20Endpoint%20Application%20Protection%20Platform%20Product%20Planning%20and%20Design)
 
 **分类**: 未分类 | **更新日期**: 2026-02-27 | **字数**: 12446 | **阅读时间**: 50分钟
-
----
-
-### 📝 [第5章 理论与实践整合：构建企业级数据驱动安全框架](/%E7%AC%94%E8%AE%B0/Enterprise%20Data%20Driven%20Security%20Framework%20Integration)
-
-**分类**: 未分类 | **更新日期**: 2026-02-27 | **字数**: 2618 | **阅读时间**: 11分钟
 
 ---
 
