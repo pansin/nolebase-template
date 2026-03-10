@@ -62,10 +62,10 @@ jobs:
 
       - name: 部署到服务器
         run: |
-          rsync -avz --delete \
-            -e "ssh -p ${{ secrets.REMOTE_PORT || '22' }} -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
-            .vitepress/dist/ \
-            ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.DEPLOY_PATH }}
+          SSH_CMD="ssh -p ${{ secrets.REMOTE_PORT || '22' }} -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no"
+          # 清空远程目录并上传新文件
+          $SSH_CMD ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "rm -rf ${{ secrets.DEPLOY_PATH }}/*"
+          scp -P ${{ secrets.REMOTE_PORT || '22' }} -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -r .vitepress/dist/* ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.DEPLOY_PATH }}/
 
       - name: 清理密钥
         if: always()
